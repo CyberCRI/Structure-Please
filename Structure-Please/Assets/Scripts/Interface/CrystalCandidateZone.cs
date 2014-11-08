@@ -3,9 +3,7 @@ using System.Collections;
 
 public class CrystalCandidateZone : MonoBehaviour {
 
-
 	public SpriteRenderer candidate;
-
 	public Sprite sprite1;
 	public Sprite sprite2;
 	public Sprite sprite3;
@@ -13,25 +11,16 @@ public class CrystalCandidateZone : MonoBehaviour {
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = 1;
 	private int _currentIndex = 1;
+	private string _baseName = "Textures/candidates/";
 
 	public void displayNextCrystal(int i)
 	{
-		Debug.Log("display "+i);
 		candidate.gameObject.SetActive(true);
-		//candidate.guiTexture = new GUITexture();
 
-		switch(i)
-		{
-		case 1:
-			candidate.sprite = sprite1;
-			break;
-		case 2:
-			candidate.sprite = sprite2;
-			break;
-		case 3:
-			candidate.sprite = sprite3;
-			break;
-		}
+		string name = _baseName+i;
+		Debug.Log("display "+i+" ie "+name);
+		Sprite sprite = Resources.Load<Sprite>(name) as Sprite;
+		candidate.sprite = sprite;
 	}
 
 	// Use this for initialization
