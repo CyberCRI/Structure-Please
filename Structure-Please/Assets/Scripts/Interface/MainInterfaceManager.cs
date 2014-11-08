@@ -14,6 +14,9 @@ public class MainInterfaceManager : MonoBehaviour {
 
 	public void displayCrystal(Sprite sprite)
 	{		
+		crystalCandidateZone.gameObject.SetActive(true);
+		identityCardPanel.gameObject.SetActive(true);
+
 		crystalCandidateZone.displayCrystal(sprite);
 		identityCardPanel.displayCrystal(sprite);
 	}
