@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Crystal {
 	public string name;
+	public string image;
 	public float? density;
 	public string structure;
 	public bool? transparency;
