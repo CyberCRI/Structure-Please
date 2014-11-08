@@ -139,7 +139,7 @@ public class Engine : MonoBehaviour {
 			var crystal = new Crystal ();
 
 			crystal.name = crystalData["Name"];
-			crystal.image = crystalData["Image"];
+			crystal.picture = crystalData["Picture"];
 			crystal.density = float.Parse(crystalData["Density"]);
 			crystal.structure = crystalData["Structure"];
 			crystal.transparency = bool.Parse(crystalData["Transparency"]);
@@ -157,7 +157,8 @@ public class Engine : MonoBehaviour {
 			var character = new Character();
 
 			character.name = characterData["Name"];
-			character.image = characterData["Image"];
+			character.age = int.Parse(characterData["Age"]);
+			character.picture = characterData["Picture"];
 			character.pretendsToBe = crystals[characterData["PretendsToBe"]];
 			character.reallyIs = crystals[characterData["ReallyIs"]];
 

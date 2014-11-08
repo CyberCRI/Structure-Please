@@ -1,4 +1,4 @@
-Name,Image,Density,Structure,Transparency,Hardness,Color
+Name,Picture,Density,Structure,Transparency,Hardness,Color
 Gold,gold.png,34,orStructure.png,TRUE,4,blue
 Graphite,,2.1,,FALSE,1.5,black
 Diamant incolore,,3.5,,TRUE,10,incolor

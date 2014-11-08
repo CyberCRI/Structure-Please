@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Character {
 	public string name;
-	public string image;
+	public int age;
+	public string picture;
 	public int prize;
 	public Crystal pretendsToBe;
 	public Crystal reallyIs;
