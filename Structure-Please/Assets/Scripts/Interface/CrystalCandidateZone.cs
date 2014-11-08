@@ -7,6 +7,7 @@ public class CrystalCandidateZone : MonoBehaviour {
 	public Sprite sprite1;
 	public Sprite sprite2;
 	public Sprite sprite3;
+	public IdentityCardPanel identityCardPanel;
 
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = 1;
@@ -19,8 +20,10 @@ public class CrystalCandidateZone : MonoBehaviour {
 
 		string name = _baseName+i;
 		Debug.Log("display "+i+" ie "+name);
-		Sprite sprite = Resources.Load<Sprite>(name) as Sprite;
+		Sprite sprite = Resources.Load<Sprite>(name);
 		candidate.sprite = sprite;
+
+		identityCardPanel.displayNextCrystal();
 	}
 
 	// Use this for initialization
