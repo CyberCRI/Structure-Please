@@ -9,6 +9,8 @@ public class IdentityCardPanel : MonoBehaviour {
 	public GUIText microscopicAspect;
 	public GUIText geometry;
 
+	public SpriteRenderer idPicture;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -26,5 +28,9 @@ public class IdentityCardPanel : MonoBehaviour {
 		polarization.text = "Oui";
 		microscopicAspect.text = "Lisse";
 		geometry.text = "rhomboédrique";
+
+		int i = Mathf.FloorToInt(Random.value*2+1);
+		Sprite sprite = Resources.Load<Sprite>("Textures/candidates/"+i);
+		idPicture.sprite = sprite;
 	}
 }
