@@ -2,16 +2,55 @@
 using System.Collections;
 
 public class MainInterfaceManager : MonoBehaviour {
-
 	public Engine engine;	
 	public CrystalCandidateZone crystalCandidateZone;
 	public ResultPanel resultPanel;
+	public DensityCardPanel densityCardPanel;
+	public TransparencyCardPanel transparencyCardPanel;
+	public StructureCardPanel structureCardPanel;
+	public HardnessCardText hardnessCardPanel;
+	public ColorCardPanel colorCardPanel;
 	
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = .5f;
 	private int _currentIndex = 1;
 	private string _baseName = "Textures/candidates/";
 
+	public void acceptCharacter() 
+	{
+		var wasRight = engine.makeDecision (true);
+		// TODO: say something about how the player was right or wrong
+		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
+		gotoNextCharacter ();
+	}
+
+	public void rejectCharacter() 
+	{
+		var wasRight = engine.makeDecision (false);
+		// TODO: say something about how the player was right or wrong
+		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
+		gotoNextCharacter ();
+	}
+
+	public void gotoNextCharacter() 
+	{
+		hideCardPanels ();
+		hideCrystalOnBooth ();
+		engine.gotoNextCharacter ();
+		
+		displayCrystalOnBooth(engine.getCurrentCharacter());
+	}
+
+	public void hideCardPanels() 
+	{
+		resultPanel.displayIDCard ();
+		densityCardPanel.gameObject.SetActive (false);
+		transparencyCardPanel.gameObject.SetActive (false);
+		structureCardPanel.gameObject.SetActive (false);
+		hardnessCardPanel.gameObject.SetActive (false);
+		colorCardPanel.gameObject.SetActive (false);
+	}
+	
 	public void displayCrystalOnBooth(Character character)
 	{	
 		Sprite sprite = Resources.Load<Sprite>(character.picture);
@@ -24,6 +63,11 @@ public class MainInterfaceManager : MonoBehaviour {
 		crystalCandidateZone.displayCrystal(sprite);    
     }
 
+	public void hideCrystalOnBooth()
+	{
+		crystalCandidateZone.gameObject.SetActive (false);
+	}
+
 	public void onPressIDCard()
 	{
 		resultPanel.displayIDCard(engine.getCurrentCharacter());
@@ -31,34 +75,49 @@ public class MainInterfaceManager : MonoBehaviour {
 	
 	public void onPressAnalyzeDensity()
 	{
-		bool alreadyDone = engine.analyzeDensity();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeDensity();
+		if(!performedTest) return;
+
+		densityCardPanel.gameObject.SetActive (true);
+		densityCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeStructure()
 	{
-		bool alreadyDone = engine.analyzeStructure();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeStructure();
+		if(!performedTest) return;
+		
+		structureCardPanel.gameObject.SetActive (true);
+		structureCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeTransparency()
 	{
-		bool alreadyDone = engine.analyzeTransparency();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeTransparency();
+		if(!performedTest) return;
+		
+		densityCardPanel.gameObject.SetActive (true);
+		densityCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeHardness()
 	{
-		bool alreadyDone = engine.analyzeHardness();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeHardness();
+		if(!performedTest) return;
+		
+		hardnessCardPanel.gameObject.SetActive (true);
+		hardnessCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeColor()
 	{
-		bool alreadyDone = engine.analyzeColor();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeColor();
+		if(!performedTest) return;
+		
+		colorCardPanel.gameObject.SetActive (true);
+		colorCardPanel.display (engine.getCurrentTestResults());
 	}
   
 	
 	// Use this for initialization
 	void Start () {
-		resultPanel.displayIDCard();
+		gotoNextCharacter ();
     }	
 
 	// Update is called once per frame
@@ -111,11 +170,17 @@ public class MainInterfaceManager : MonoBehaviour {
 			onPressAnalyzeColor();
 			_timeSinceLastPressed = 0;
 	    }
-		//next
-		if(Input.GetKey(KeyCode.N) && (_timeSinceLastPressed > _timeBetweenTwoPressed))
+		//accept
+		if(Input.GetKey(KeyCode.A) && (_timeSinceLastPressed > _timeBetweenTwoPressed))
 		{			
-			engine.gotoNextCharacter();
+			acceptCharacter();
 			_timeSinceLastPressed = 0;
 		}
-  }
+		//reject
+		if(Input.GetKey(KeyCode.R) && (_timeSinceLastPressed > _timeBetweenTwoPressed))
+		{			
+			rejectCharacter();
+			_timeSinceLastPressed = 0;
+		}
+	}
 }
