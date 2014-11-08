@@ -3,6 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Engine : MonoBehaviour {
+	TextAsset crystalsCsv;
+	TextAsset charactersCsv;
+	TextAsset testsCsv;
+	
+
+	// Private attributes:
+
 	Dictionary<string, Crystal> crystals;
 	List<Character> characters;
 	Dictionary<string, int> testCosts;
@@ -12,53 +19,28 @@ public class Engine : MonoBehaviour {
 	Character currentCharacter;
 	Crystal currentTestResults;
 	int wealth = 20;
-	
-	void Awake () 
-	{
-		// TODO: load crystals from CSV file
-		crystals = new Dictionary<string, Crystal> ();
-		var crystal = new Crystal ();
-		crystal.name = "gold";
-		crystals.Add ("Gold", crystal);
-		crystal = new Crystal ();
-		crystal.name = "diamond";
-		crystals.Add ("Diamond", crystal);
-
-		// TODO: load characters from CSV file
-		characters = new List<Character>();
-		var character = new Character();
-		character.name = "Bob";
-		character.reallyIs = crystals["Gold"];
-		character.pretendsToBe = crystals["Diamond"];
-		characters.Add (character);
-
-		// TODO: load costs from CSV file
-		testCosts = new Dictionary<string, int> ();
-		testCosts.Add ("Density", 1);
-		testCosts.Add ("Transparency", 2);
-		testCosts.Add ("Structure", 8);
-		testCosts.Add ("Hardness", 4);
-		testCosts.Add ("Color", 5);
-	}
 
 
-	// Getters
+	// Getters:
+
 	public Character getCurrentCharacter() 
 	{
 		return currentCharacter;
 	}
-
+	
 	public Crystal getCurrentTestResults() 
 	{
 		return currentTestResults;
 	}
-
+	
 	public int getWealth() 
 	{
 		return wealth;
 	}
 
-	
+
+	// Public methods:
+
 	public void gotoNextCharacter() 
 	{
 		currentCharacter = characters [nextCharacterIndex++];
@@ -130,5 +112,65 @@ public class Engine : MonoBehaviour {
 		currentTestResults.color = currentCharacter.reallyIs.color;
 		wealth -= testCosts["Color"];
 		return true;
+	}
+
+
+	// Internal methods:
+
+	void Awake () 
+	{
+		// Hardcoded values
+		crystalsCsv = Resources.Load<TextAsset>("CSV/crystals");
+		charactersCsv = Resources.Load<TextAsset> ("CSV/characters");
+		testsCsv = Resources.Load<TextAsset> ("CSV/tests");
+	
+		loadData ();
+
+		gotoNextCharacter();
+	}
+
+	void loadData()
+	{
+		// load crystals
+		var crystalsData = CsvLoader.loadCsv (crystalsCsv.text);
+		crystals = new Dictionary<string, Crystal> ();
+		foreach( var crystalData in crystalsData ) 
+		{
+			var crystal = new Crystal ();
+
+			crystal.name = crystalData["Name"];
+			crystal.picture = crystalData["Picture"];
+			crystal.density = float.Parse(crystalData["Density"]);
+			crystal.structure = crystalData["Structure"];
+			crystal.transparency = bool.Parse(crystalData["Transparency"]);
+			crystal.hardness = float.Parse(crystalData["Hardness"]);
+			crystal.color = crystalData["Color"];
+
+			crystals[crystal.name] = crystal;
+		}
+
+		// load characters
+		var charactersData = CsvLoader.loadCsv (charactersCsv.text);
+		characters = new List<Character> ();
+		foreach (var characterData in charactersData) 
+		{
+			var character = new Character();
+
+			character.name = characterData["Name"];
+			character.age = int.Parse(characterData["Age"]);
+			character.picture = characterData["Picture"];
+			character.pretendsToBe = crystals[characterData["PretendsToBe"]];
+			character.reallyIs = crystals[characterData["ReallyIs"]];
+
+			characters.Add(character);
+		}
+
+		// load tests
+		var testsData = CsvLoader.loadCsv (testsCsv.text);
+		testCosts = new Dictionary<string, int> ();
+		foreach (var testData in testsData) 
+		{
+			testCosts[testData["Property"]] = int.Parse(testData["Cost"]);
+		}
 	}
 }
