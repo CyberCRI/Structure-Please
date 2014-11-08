@@ -28,6 +28,8 @@ public class Engine : MonoBehaviour {
 		characters = new List<Character>();
 		var character = new Character();
 		character.name = "Bob";
+		character.age = 12;
+		character.picture = "2";
 		character.reallyIs = crystals["Gold"];
 		character.pretendsToBe = crystals["Diamond"];
 		characters.Add (character);
@@ -39,6 +41,8 @@ public class Engine : MonoBehaviour {
 		testCosts.Add ("Structure", 8);
 		testCosts.Add ("Hardness", 4);
 		testCosts.Add ("Color", 5);
+
+		gotoNextCharacter();
 	}
 
 

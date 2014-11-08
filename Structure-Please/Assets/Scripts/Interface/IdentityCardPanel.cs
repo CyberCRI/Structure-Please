@@ -4,12 +4,17 @@ using System.Collections;
 public class IdentityCardPanel : MonoBehaviour {
 
 	public GUIText crystalName;
-	public GUIText weight;
-	public GUIText polarization;
-	public GUIText microscopicAspect;
-	public GUIText geometry;
+	public GUIText age;
+	public GUIText chemicalSpecies;
+	public GUIText structure;
+	public GUIText density;
+	public GUIText transparency;
+	public GUIText hardness;
+	public GUIText color;
 
 	public SpriteRenderer idPicture;
+
+	private string _baseName = "Textures/candidates/";
 
 	// Use this for initialization
 	void Start () {
@@ -21,14 +26,29 @@ public class IdentityCardPanel : MonoBehaviour {
 	
 	}
 
-	public void displayCrystal(Sprite sprite)
+	public void displayCrystal(Character character)
 	{
-		crystalName.text = "John";
-		weight.text = "32 kg";
-		polarization.text = "Oui";
-		microscopicAspect.text = "Lisse";
-		geometry.text = "rhomboédrique";
+	/*
+	public string name;
+	public float? density;
+	public string structure;
+	public bool? transparency;
+	public float? hardness;
+	public string color;
+	*/
+		Crystal pretendsToBe = character.pretendsToBe;
 
+		crystalName.text = character.name;
+		age.text = character.age.ToString();
+		chemicalSpecies.text = pretendsToBe.name;
+		structure.text = pretendsToBe.structure;
+		density.text = pretendsToBe.density.HasValue?pretendsToBe.density.Value.ToString():"?";
+		transparency.text = pretendsToBe.transparency.HasValue?(pretendsToBe.transparency.Value?"oui":"non"):"?";
+		hardness.text = pretendsToBe.hardness.HasValue?pretendsToBe.hardness.Value.ToString():"?";
+		color.text = pretendsToBe.color;
+
+		string name = _baseName+character.picture;
+		Sprite sprite = Resources.Load<Sprite>(name);
 		idPicture.sprite = sprite;
 	}
 }
