@@ -21,7 +21,7 @@ public class IdentityCardPanel : MonoBehaviour {
 	
 	}
 
-	public void displayNextCrystal()
+	public void displayCrystal(Sprite sprite)
 	{
 		crystalName.text = "John";
 		weight.text = "32 kg";
@@ -29,8 +29,6 @@ public class IdentityCardPanel : MonoBehaviour {
 		microscopicAspect.text = "Lisse";
 		geometry.text = "rhomboédrique";
 
-		int i = Mathf.FloorToInt(Random.value*2+1);
-		Sprite sprite = Resources.Load<Sprite>("Textures/candidates/"+i);
 		idPicture.sprite = sprite;
 	}
 }
