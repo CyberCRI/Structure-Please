@@ -2,16 +2,30 @@
 using System.Collections;
 
 public class MainInterfaceManager : MonoBehaviour {
-
 	public Engine engine;	
 	public CrystalCandidateZone crystalCandidateZone;
 	public ResultPanel resultPanel;
+	public DensityCardPanel densityCardPanel;
+	public TransparencyCardPanel transparencyCardPanel;
+	public StructureCardPanel structureCardPanel;
+	public HardnessCardText hardnessCardPanel;
+	public ColorCardPanel colorCardPanel;
 	
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = .5f;
 	private int _currentIndex = 1;
 	private string _baseName = "Textures/candidates/";
 
+	public void hideCardPanels() 
+	{
+		resultPanel.displayIDCard ();
+		densityCardPanel.gameObject.SetActive (false);
+		transparencyCardPanel.gameObject.SetActive (false);
+		structureCardPanel.gameObject.SetActive (false);
+		hardnessCardPanel.gameObject.SetActive (false);
+		colorCardPanel.gameObject.SetActive (false);
+	}
+	
 	public void displayCrystalOnBooth(Character character)
 	{	
 		Sprite sprite = Resources.Load<Sprite>(character.picture);
@@ -31,28 +45,43 @@ public class MainInterfaceManager : MonoBehaviour {
 	
 	public void onPressAnalyzeDensity()
 	{
-		bool alreadyDone = engine.analyzeDensity();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeDensity();
+		if(!performedTest) return;
+
+		densityCardPanel.gameObject.SetActive (true);
+		densityCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeStructure()
 	{
-		bool alreadyDone = engine.analyzeStructure();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeStructure();
+		if(!performedTest) return;
+		
+		structureCardPanel.gameObject.SetActive (true);
+		structureCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeTransparency()
 	{
-		bool alreadyDone = engine.analyzeTransparency();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeTransparency();
+		if(!performedTest) return;
+		
+		densityCardPanel.gameObject.SetActive (true);
+		densityCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeHardness()
 	{
-		bool alreadyDone = engine.analyzeHardness();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeHardness();
+		if(!performedTest) return;
+		
+		hardnessCardPanel.gameObject.SetActive (true);
+		hardnessCardPanel.display (engine.getCurrentTestResults());
 	}
 	public void onPressAnalyzeColor()
 	{
-		bool alreadyDone = engine.analyzeColor();
-		Crystal tests = engine.getCurrentTestResults();
+		bool performedTest = engine.analyzeColor();
+		if(!performedTest) return;
+		
+		colorCardPanel.gameObject.SetActive (true);
+		colorCardPanel.display (engine.getCurrentTestResults());
 	}
   
 	
