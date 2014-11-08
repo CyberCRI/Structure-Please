@@ -31,6 +31,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	
 	public void onPressAnalyzeDensity()
 	{
+		Debug.Log("onPressAnalyzeDensity()");
 		bool alreadyDone = engine.analyzeDensity();
 		Crystal tests = engine.getCurrentTestResults();
 	}
@@ -117,5 +118,52 @@ public class MainInterfaceManager : MonoBehaviour {
 			engine.gotoNextCharacter();
 			_timeSinceLastPressed = 0;
 		}
+	}	
+	
+	public Texture2D densityIcon;
+	public Texture2D structureIcon;
+	public Texture2D hardnessIcon;
+	public Texture2D transparencyIcon;
+	public Texture2D colorIcon;
+
+	public int _densityX = 0;
+	public int _densityY = 0;
+	public int _structureX = 64;
+	public int _structureY = 64;
+	public int _hardnessX = 128;
+	public int _hardnessY = 128;
+	public int _transparencyX = 0;
+	public int _transparencyY = 0;
+	public int _colorX = 64;
+	public int _colorY = 64;
+
+	private int _buttonWidth = 64;
+	private int _buttonHeight = 64;
+
+	/*
+	void OnGUI () {
+		int height = Screen.height;
+		Debug.Log(height);
+		if(GUI.Button (new Rect(_densityX,height-_densityY,_buttonWidth,_buttonHeight), new GUIContent (densityIcon, "Pour évaluer la densité")))
+		{
+			onPressAnalyzeDensity();
+		}
+		if(GUI.Button (new Rect(_structureX, height-_structureY, _buttonWidth, _buttonHeight), new GUIContent (structureIcon, "Pour évaluer la géométrie")))
+		{
+			onPressAnalyzeStructure();
+		}
+		if(GUI.Button (new Rect(_hardnessX, height-_hardnessY, _buttonWidth, _buttonHeight), new GUIContent (hardnessIcon, "Pour évaluer la dureté")))
+		{
+			onPressAnalyzeHardness();
+		}
+		if(GUI.Button (new Rect(_transparencyX, height-_transparencyY, _buttonWidth, _buttonHeight), new GUIContent (transparencyIcon, "Pour évaluer la transparence")))
+		{
+			onPressAnalyzeTransparency();
+		}
+		if(GUI.Button (new Rect(_colorX, height-_colorY, _buttonWidth, _buttonHeight), new GUIContent (colorIcon, "Pour évaluer la couleur")))
+		{
+			onPressAnalyzeColor();
+		}
   }
+  */
 }
