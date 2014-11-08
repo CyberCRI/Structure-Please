@@ -1,10 +1,15 @@
 using UnityEngine;
 using System.Collections;
 
-public struct Crystal {
+public class Crystal {
 	public string name;
-	public float mass;
-	public bool polarity;
+	public float? density;
 	public string structure;
-	public string appearance;
+	public bool? transparency;
+	public float? hardness;
+	public string color;
+
+	public Crystal clone() {
+		return (Crystal)this.MemberwiseClone ();
+	}
 }
