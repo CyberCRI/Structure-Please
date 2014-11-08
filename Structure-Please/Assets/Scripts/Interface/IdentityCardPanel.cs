@@ -28,14 +28,6 @@ public class IdentityCardPanel : MonoBehaviour {
 
 	public void displayCrystal(Character character)
 	{
-	/*
-	public string name;
-	public float? density;
-	public string structure;
-	public bool? transparency;
-	public float? hardness;
-	public string color;
-	*/
 		Crystal pretendsToBe = character.pretendsToBe;
 
 		crystalName.text = character.name;
