@@ -16,6 +16,31 @@ public class MainInterfaceManager : MonoBehaviour {
 	private int _currentIndex = 1;
 	private string _baseName = "Textures/candidates/";
 
+	public void acceptCharacter() 
+	{
+		var wasRight = engine.makeDecision (true);
+		// TODO: say something about how the player was right or wrong
+		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
+		gotoNextCharacter ();
+	}
+
+	public void rejectCharacter() 
+	{
+		var wasRight = engine.makeDecision (false);
+		// TODO: say something about how the player was right or wrong
+		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
+		gotoNextCharacter ();
+	}
+
+	public void gotoNextCharacter() 
+	{
+		hideCardPanels ();
+		hideCrystalOnBooth ();
+		engine.gotoNextCharacter ();
+		
+		displayCrystalOnBooth(engine.getCurrentCharacter());
+	}
+
 	public void hideCardPanels() 
 	{
 		resultPanel.displayIDCard ();
@@ -37,6 +62,11 @@ public class MainInterfaceManager : MonoBehaviour {
 		crystalCandidateZone.gameObject.SetActive(true);
 		crystalCandidateZone.displayCrystal(sprite);    
     }
+
+	public void hideCrystalOnBooth()
+	{
+		crystalCandidateZone.gameObject.SetActive (false);
+	}
 
 	public void onPressIDCard()
 	{
@@ -87,7 +117,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		resultPanel.displayIDCard();
+		gotoNextCharacter ();
     }	
 
 	// Update is called once per frame
@@ -140,11 +170,17 @@ public class MainInterfaceManager : MonoBehaviour {
 			onPressAnalyzeColor();
 			_timeSinceLastPressed = 0;
 	    }
-		//next
-		if(Input.GetKey(KeyCode.N) && (_timeSinceLastPressed > _timeBetweenTwoPressed))
+		//accept
+		if(Input.GetKey(KeyCode.A) && (_timeSinceLastPressed > _timeBetweenTwoPressed))
 		{			
-			engine.gotoNextCharacter();
+			acceptCharacter();
 			_timeSinceLastPressed = 0;
 		}
-  }
+		//reject
+		if(Input.GetKey(KeyCode.R) && (_timeSinceLastPressed > _timeBetweenTwoPressed))
+		{			
+			rejectCharacter();
+			_timeSinceLastPressed = 0;
+		}
+	}
 }

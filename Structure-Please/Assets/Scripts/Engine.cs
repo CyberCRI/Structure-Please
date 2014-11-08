@@ -125,8 +125,6 @@ public class Engine : MonoBehaviour {
 		testsCsv = Resources.Load<TextAsset> ("CSV/tests");
 	
 		loadData ();
-
-		gotoNextCharacter();
 	}
 
 	void loadData()
