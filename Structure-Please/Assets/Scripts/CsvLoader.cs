@@ -16,7 +16,7 @@ public class CsvLoader
 			var lineDict = new Dictionary<string, string>();
 			for( int j = 0; j < headings.Length; j++ ) 
 			{
-				lineDict[headings[i]] = lineValues[i];
+				lineDict[headings[j]] = lineValues[j];
 			}
 
 			results.Add(lineDict);

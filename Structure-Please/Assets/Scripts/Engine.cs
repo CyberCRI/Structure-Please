@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Engine : MonoBehaviour {
-	// Unity properties :
-	public TextAsset crystalsCsv;
-	public TextAsset charactersCsv;
-	public TextAsset testsCsv;
+	TextAsset crystalsCsv;
+	TextAsset charactersCsv;
+	TextAsset testsCsv;
 	
 
 	// Private attributes:
@@ -120,6 +119,18 @@ public class Engine : MonoBehaviour {
 
 	void Awake () 
 	{
+		// Hardcoded values
+		crystalsCsv = Resources.Load<TextAsset>("CSV/crystals");
+		charactersCsv = Resources.Load<TextAsset> ("CSV/characters");
+		testsCsv = Resources.Load<TextAsset> ("CSV/tests");
+	
+		loadData ();
+
+		gotoNextCharacter();
+	}
+
+	void loadData()
+	{
 		// load crystals
 		var crystalsData = CsvLoader.loadCsv (crystalsCsv.text);
 		crystals = new Dictionary<string, Crystal> ();
@@ -158,8 +169,7 @@ public class Engine : MonoBehaviour {
 		testCosts = new Dictionary<string, int> ();
 		foreach (var testData in testsData) 
 		{
-			testCosts[testData["Name"]] = int.Parse(testData["Cost"]);
+			testCosts[testData["Property"]] = int.Parse(testData["Cost"]);
 		}
-
 	}
 }
