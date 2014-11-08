@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HardnessCardText : MonoBehaviour {
+public class HardnessCardPanel : MonoBehaviour {
 
 	public GUIText hardnessText;
 

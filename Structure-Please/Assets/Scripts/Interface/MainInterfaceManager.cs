@@ -8,7 +8,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	public DensityCardPanel densityCardPanel;
 	public TransparencyCardPanel transparencyCardPanel;
 	public StructureCardPanel structureCardPanel;
-	public HardnessCardText hardnessCardPanel;
+	public HardnessCardPanel hardnessCardPanel;
 	public ColorCardPanel colorCardPanel;
 	
 	private float _timeSinceLastPressed = 0;
