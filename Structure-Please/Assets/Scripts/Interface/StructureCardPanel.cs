@@ -17,13 +17,23 @@ public class StructureCardPanel : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	void onEnable()
+	{
+		structureText.gameObject.SetActive(true);
+	}
+	
+	void onDisable()
+	{
+		structureText.gameObject.SetActive(false);
+	}
 
 	public void display(Crystal testResults)
 	{
 		structureText.text = testResults.structure;
 
-		string name = _baseName+testResults.picture;
-		Sprite sprite = Resources.Load<Sprite>(name);
+		string name = testResults.picture;
+		Sprite sprite = Resources.Load<Sprite>(_baseName+name);
 		idPicture.sprite = sprite;
 
 	}

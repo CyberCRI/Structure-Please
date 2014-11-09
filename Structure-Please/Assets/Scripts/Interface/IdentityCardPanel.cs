@@ -25,9 +25,34 @@ public class IdentityCardPanel : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	void onEnable()
+	{
+		crystalName.gameObject.SetActive(true);
+		age.gameObject.SetActive(true);
+		chemicalSpecies.gameObject.SetActive(true);
+		structure.gameObject.SetActive(true);
+		density.gameObject.SetActive(true);
+		transparency.gameObject.SetActive(true);
+		hardness.gameObject.SetActive(true);
+		color.gameObject.SetActive(true);
+	}
+	
+	void onDisable()
+	{
+		crystalName.gameObject.SetActive(false);
+		age.gameObject.SetActive(false);
+		chemicalSpecies.gameObject.SetActive(false);
+		structure.gameObject.SetActive(false);
+		density.gameObject.SetActive(false);
+		transparency.gameObject.SetActive(false);
+		hardness.gameObject.SetActive(false);
+		color.gameObject.SetActive(true);
+	}
 
 	public void displayCrystal(Character character)
 	{
+		Debug.Log("IdentityCardPanel::displayCrystal("+character+")");
 		Crystal pretendsToBe = character.pretendsToBe;
 
 		crystalName.text = character.name;
@@ -39,8 +64,9 @@ public class IdentityCardPanel : MonoBehaviour {
 		hardness.text = pretendsToBe.hardness.HasValue?pretendsToBe.hardness.Value.ToString():"?";
 		color.text = pretendsToBe.color;
 
-		string name = _baseName+character.picture;
-		Sprite sprite = Resources.Load<Sprite>(name);
+		string name = character.picture;
+		Sprite sprite = Resources.Load<Sprite>(_baseName+name);
+		Debug.Log("IdentityCardPanel::displayCrystal("+character+") name="+name+", sprite="+sprite);
 		idPicture.sprite = sprite;
 	}
 }

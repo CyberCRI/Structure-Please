@@ -37,7 +37,8 @@ public class MainInterfaceManager : MonoBehaviour {
 		hideCardPanels ();
 		hideCrystalOnBooth ();
 		engine.gotoNextCharacter ();
-		
+
+		Debug.Log("MainInterfaceManager::gotoNextCharacter calls displayCrystalOnBooth");
 		displayCrystalOnBooth(engine.getCurrentCharacter());
 	}
 
@@ -53,12 +54,14 @@ public class MainInterfaceManager : MonoBehaviour {
 	
 	public void displayCrystalOnBooth(Character character)
 	{	
-		Sprite sprite = Resources.Load<Sprite>(character.picture);
+		Debug.Log("MainInterfaceManager::displayCrystalOnBooth("+character.picture+")");
+		Sprite sprite = Resources.Load<Sprite>(_baseName+character.picture);
 		displayCrystalOnBooth(sprite);
 	}
 	
 	public void displayCrystalOnBooth(Sprite sprite)
 	{
+		Debug.Log("MainInterfaceManager::displayCrystal("+sprite.name+")");
 		crystalCandidateZone.gameObject.SetActive(true);
 		crystalCandidateZone.displayCrystal(sprite);    
     }
@@ -70,53 +73,91 @@ public class MainInterfaceManager : MonoBehaviour {
 
 	public void onPressIDCard()
 	{
+		Debug.Log("MainInterfaceManager::onPressIDCard");
 		resultPanel.displayIDCard(engine.getCurrentCharacter());
 	}
 	
 	public void onPressAnalyzeDensity()
 	{
 		Debug.Log ("onPressAnalyzeDensity");
-		bool performedTest = engine.analyzeDensity();
-		if(!performedTest) return;
+		if(!densityCardPanel.gameObject.activeSelf)
+		{
+			densityCardPanel.gameObject.SetActive (true);
+			bool performedTest = engine.analyzeDensity();
+			if(!performedTest) return;
 
-		densityCardPanel.gameObject.SetActive (true);
-		densityCardPanel.display (engine.getCurrentTestResults());
+			densityCardPanel.display(engine.getCurrentTestResults());
+		}
+		else
+		{
+			densityCardPanel.gameObject.SetActive (false);
+		}
 	}
 	public void onPressAnalyzeStructure()
 	{
 		Debug.Log ("onPressAnalyzeStructure");
-		bool performedTest = engine.analyzeStructure();
-		if(!performedTest) return;
-		
-		structureCardPanel.gameObject.SetActive (true);
-		structureCardPanel.display (engine.getCurrentTestResults());
+		if(!structureCardPanel.gameObject.activeSelf)
+		{
+			structureCardPanel.gameObject.SetActive (true);
+			bool performedTest = engine.analyzeStructure();
+			if(!performedTest) return;
+
+			structureCardPanel.display (engine.getCurrentTestResults());
+		}
+		else
+		{
+			structureCardPanel.gameObject.SetActive(false);
+		}
 	}
 	public void onPressAnalyzeTransparency()
 	{
 		Debug.Log ("onPressAnalyzeTransparency");
-		bool performedTest = engine.analyzeTransparency();
-		if(!performedTest) return;
-		
-		densityCardPanel.gameObject.SetActive (true);
-		densityCardPanel.display (engine.getCurrentTestResults());
+		if(!transparencyCardPanel.gameObject.activeSelf)
+		{
+			transparencyCardPanel.gameObject.SetActive (true);
+			bool performedTest = engine.analyzeTransparency();
+			if(!performedTest) return;
+
+			transparencyCardPanel.display (engine.getCurrentTestResults());
+		}
+		else
+		{
+			transparencyCardPanel.gameObject.SetActive(false);
+		}
 	}
 	public void onPressAnalyzeHardness()
 	{
 		Debug.Log ("onPressAnalyzeHardness");
-		bool performedTest = engine.analyzeHardness();
-		if(!performedTest) return;
-		
-		hardnessCardPanel.gameObject.SetActive (true);
-		hardnessCardPanel.display (engine.getCurrentTestResults());
+		if(!hardnessCardPanel.gameObject.activeSelf)
+		{
+			hardnessCardPanel.gameObject.SetActive (true);
+			bool performedTest = engine.analyzeHardness();
+			if(!performedTest) return;
+
+			hardnessCardPanel.display (engine.getCurrentTestResults());
+		}
+		else
+		{
+			hardnessCardPanel.gameObject.SetActive (false);
+		}
 	}
 	public void onPressAnalyzeColor()
 	{
 		Debug.Log ("onPressAnalyzeColor");
-		bool performedTest = engine.analyzeColor();
-		if(!performedTest) return;
-		
-		colorCardPanel.gameObject.SetActive (true);
-		colorCardPanel.display (engine.getCurrentTestResults());
+		/*
+		if(!colorCardPanel.gameObject.activeSelf)
+		{
+			colorCardPanel.gameObject.SetActive (true);
+			bool performedTest = engine.analyzeColor();
+			if(!performedTest) return;
+
+			colorCardPanel.display (engine.getCurrentTestResults());
+		}
+		else
+		{
+			colorCardPanel.gameObject.SetActive (false);
+		}
+		*/
 	}
   
 	
@@ -137,9 +178,9 @@ public class MainInterfaceManager : MonoBehaviour {
 		{
 			//int i = Mathf.FloorToInt(Random.value*2+1);
 			_currentIndex = (_currentIndex+1) %3 + 1;
-			string name = _baseName+_currentIndex;
+			string name = _currentIndex.ToString();
 			Debug.Log("display "+_currentIndex+" ie "+name);
-			Sprite sprite = Resources.Load<Sprite>(name);
+			Sprite sprite = Resources.Load<Sprite>(_baseName+name);
 			displayCrystalOnBooth(sprite);
 			_timeSinceLastPressed = 0;
 		}
