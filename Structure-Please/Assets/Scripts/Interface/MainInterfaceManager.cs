@@ -75,6 +75,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	
 	public void onPressAnalyzeDensity()
 	{
+		Debug.Log ("onPressAnalyzeDensity");
 		bool performedTest = engine.analyzeDensity();
 		if(!performedTest) return;
 
@@ -83,6 +84,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	}
 	public void onPressAnalyzeStructure()
 	{
+		Debug.Log ("onPressAnalyzeStructure");
 		bool performedTest = engine.analyzeStructure();
 		if(!performedTest) return;
 		
@@ -91,6 +93,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	}
 	public void onPressAnalyzeTransparency()
 	{
+		Debug.Log ("onPressAnalyzeTransparency");
 		bool performedTest = engine.analyzeTransparency();
 		if(!performedTest) return;
 		
@@ -99,6 +102,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	}
 	public void onPressAnalyzeHardness()
 	{
+		Debug.Log ("onPressAnalyzeHardness");
 		bool performedTest = engine.analyzeHardness();
 		if(!performedTest) return;
 		
@@ -107,6 +111,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	}
 	public void onPressAnalyzeColor()
 	{
+		Debug.Log ("onPressAnalyzeColor");
 		bool performedTest = engine.analyzeColor();
 		if(!performedTest) return;
 		
@@ -118,6 +123,10 @@ public class MainInterfaceManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gotoNextCharacter ();
+		_buttonStyle = new GUIStyle();
+		_buttonStyle.fixedWidth = 0f;
+		_buttonStyle.fixedHeight = 0f;
+		_buttonStyle.border = new RectOffset(0, 0, 0, 0);
     }	
 
 	// Update is called once per frame
@@ -189,45 +198,93 @@ public class MainInterfaceManager : MonoBehaviour {
 	public Texture2D hardnessIcon;
 	public Texture2D transparencyIcon;
 	public Texture2D colorIcon;
+	public Texture2D idcardIcon;
+	
+	
+	private static float _buttonWidth = 278f;
+	private static float _buttonHeight = 125f;
+	private static float _spacing = 12f;
+	
+	private static float targetWidth = 1920f;
+	private static float targetHeight = 1080f;
 
-	public int _densityX = 0;
-	public int _densityY = 0;
-	public int _structureX = 64;
-	public int _structureY = 64;
-	public int _hardnessX = 128;
-	public int _hardnessY = 128;
-	public int _transparencyX = 0;
-	public int _transparencyY = 0;
-	public int _colorX = 64;
-	public int _colorY = 64;
+	private static float _densityX = 120f;
+	private static float _densityY = targetHeight-(_buttonHeight+_spacing);
+	private static float _structureX = _densityX+_buttonWidth+_spacing;
+	private static float _structureY = targetHeight-(_buttonHeight+_spacing);
+	private static float _hardnessX = _densityX+2*(_buttonWidth+_spacing);
+	private static float _hardnessY = targetHeight-(_buttonHeight+_spacing);
 
-	private int _buttonWidth = 64;
-	private int _buttonHeight = 64;
-
-	/*
+	private static float _transparencyX = _densityX;
+	private static float _transparencyY = targetHeight-2*(_buttonHeight+_spacing);
+	private static float _colorX = _densityX+_buttonWidth+_spacing;
+	private static float _colorY = targetHeight-2*(_buttonHeight+_spacing);
+	private static float _idcardX = _densityX+2*(_buttonWidth+_spacing);
+	private static float _idcardY = targetHeight-2*(_buttonHeight+_spacing);
+	
+	private GUIStyle _buttonStyle;
+    
+	private Rect resizeGUI(Rect rect)
+	{		
+		return getResizedRect(rect.x, rect.y, rect.width, rect.height);
+	}
+	
+	private Rect getResizedRect(float x, float y, float width, float height)
+	{
+		float screenWidth = width / targetWidth;
+		float rectWidth = screenWidth * Screen.width;
+		float screenHeight = height / targetHeight;
+		float rectHeight = screenHeight * Screen.height;
+		
+		float rectX = (x / targetWidth) * Screen.width;
+		float rectY = (y / targetHeight) * Screen.height;
+		
+		return new Rect(rectX, rectY, rectWidth, rectHeight);
+	}
+	
 	void OnGUI () {
-		int height = Screen.height;
-		Debug.Log(height);
-		if(GUI.Button (new Rect(_densityX,height-_densityY,_buttonWidth,_buttonHeight), new GUIContent (densityIcon, "Pour évaluer la densité")))
+
+		Rect densityRect = getResizedRect(_densityX, _densityY,_buttonWidth,_buttonHeight);
+		//Debug.Log("densityRect="+densityRect);
+		
+		Rect structureRect = getResizedRect(_structureX, _structureY,_buttonWidth,_buttonHeight);
+		//Debug.Log("structureRect="+structureRect);
+		
+		Rect hardnessRect = getResizedRect(_hardnessX, _hardnessY,_buttonWidth,_buttonHeight);
+		//Debug.Log("hardnessRect="+hardnessRect);
+		
+		Rect transparencyRect = getResizedRect(_transparencyX, _transparencyY,_buttonWidth,_buttonHeight);
+		//Debug.Log("transparencyRect="+densityRect);
+		
+		Rect colorRect = getResizedRect(_colorX, _colorY,_buttonWidth,_buttonHeight);
+		//Debug.Log("colorRect="+colorRect);
+		
+		Rect idcardRect = getResizedRect(_idcardX, _idcardY,_buttonWidth,_buttonHeight);
+		//Debug.Log("idcardRect="+idcardRect);
+
+		if(GUI.Button (densityRect, new GUIContent (densityIcon, "Pour évaluer la densité"), _buttonStyle))
 		{
 			onPressAnalyzeDensity();
 		}
-		if(GUI.Button (new Rect(_structureX, height-_structureY, _buttonWidth, _buttonHeight), new GUIContent (structureIcon, "Pour évaluer la géométrie")))
+		if(GUI.Button (structureRect, new GUIContent (structureIcon, "Pour évaluer la géométrie"), _buttonStyle))
 		{
 			onPressAnalyzeStructure();
 		}
-		if(GUI.Button (new Rect(_hardnessX, height-_hardnessY, _buttonWidth, _buttonHeight), new GUIContent (hardnessIcon, "Pour évaluer la dureté")))
+		if(GUI.Button (hardnessRect, new GUIContent (hardnessIcon, "Pour évaluer la dureté"), _buttonStyle))
 		{
 			onPressAnalyzeHardness();
 		}
-		if(GUI.Button (new Rect(_transparencyX, height-_transparencyY, _buttonWidth, _buttonHeight), new GUIContent (transparencyIcon, "Pour évaluer la transparence")))
+		if(GUI.Button (transparencyRect, new GUIContent (transparencyIcon, "Pour évaluer la transparence"), _buttonStyle))
 		{
 			onPressAnalyzeTransparency();
 		}
-		if(GUI.Button (new Rect(_colorX, height-_colorY, _buttonWidth, _buttonHeight), new GUIContent (colorIcon, "Pour évaluer la couleur")))
+		if(GUI.Button (colorRect, new GUIContent (colorIcon, "Pour évaluer la couleur"), _buttonStyle))
 		{
 			onPressAnalyzeColor();
 		}
-  }
-  */
+		if(GUI.Button (idcardRect, new GUIContent (idcardIcon, "Pour afficher la carte d'identité du cristal"), _buttonStyle))
+		{
+			onPressIDCard();
+		}
+	}
 }
