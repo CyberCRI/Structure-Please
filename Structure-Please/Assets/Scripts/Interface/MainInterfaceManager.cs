@@ -144,6 +144,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	public void onPressAnalyzeColor()
 	{
 		Debug.Log ("onPressAnalyzeColor");
+		/*
 		if(!colorCardPanel.gameObject.activeSelf)
 		{
 			colorCardPanel.gameObject.SetActive (true);
@@ -156,6 +157,7 @@ public class MainInterfaceManager : MonoBehaviour {
 		{
 			colorCardPanel.gameObject.SetActive (false);
 		}
+		*/
 	}
   
 	
