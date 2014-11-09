@@ -25,6 +25,30 @@ public class IdentityCardPanel : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	void onEnable()
+	{
+		crystalName.gameObject.SetActive(true);
+		age.gameObject.SetActive(true);
+		chemicalSpecies.gameObject.SetActive(true);
+		structure.gameObject.SetActive(true);
+		density.gameObject.SetActive(true);
+		transparency.gameObject.SetActive(true);
+		hardness.gameObject.SetActive(true);
+		color.gameObject.SetActive(true);
+	}
+	
+	void onDisable()
+	{
+		crystalName.gameObject.SetActive(false);
+		age.gameObject.SetActive(false);
+		chemicalSpecies.gameObject.SetActive(false);
+		structure.gameObject.SetActive(false);
+		density.gameObject.SetActive(false);
+		transparency.gameObject.SetActive(false);
+		hardness.gameObject.SetActive(false);
+		color.gameObject.SetActive(true);
+	}
 
 	public void displayCrystal(Character character)
 	{

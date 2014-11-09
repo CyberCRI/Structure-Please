@@ -14,6 +14,16 @@ public class TransparencyCardPanel : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	void onEnable()
+	{
+		transparencyText.gameObject.SetActive(true);
+	}
+	
+	void onDisable()
+	{
+		transparencyText.gameObject.SetActive(false);
+	}
 
 	public void display(Crystal testResults)
 	{

@@ -4,6 +4,17 @@ using System.Collections;
 public class HardnessCardPanel : MonoBehaviour {
 
 	public GUIText hardnessText;
+	
+	
+	void onEnable()
+	{
+		hardnessText.gameObject.SetActive(true);
+	}
+	
+	void onDisable()
+	{
+		hardnessText.gameObject.SetActive(false);
+	}
 
 	// Use this for initialization
 	void Start () {

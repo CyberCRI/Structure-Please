@@ -16,6 +16,20 @@ public class DensityCardPanel : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	void onEnable()
+	{
+		massText.gameObject.SetActive(true);
+		volumeText.gameObject.SetActive(true);
+		densityText.gameObject.SetActive(true);
+	}
+	
+	void onDisable()
+	{
+		massText.gameObject.SetActive(false);
+		volumeText.gameObject.SetActive(false);
+		densityText.gameObject.SetActive(false);
+	}
 
 	public void display(Crystal testResults)
 	{
