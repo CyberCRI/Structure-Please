@@ -198,10 +198,11 @@ public class MainInterfaceManager : MonoBehaviour {
 	public Texture2D hardnessIcon;
 	public Texture2D transparencyIcon;
 	public Texture2D colorIcon;
+	public Texture2D idcardIcon;
 	
 	
-	private static float _buttonWidth = 64f;
-	private static float _buttonHeight = 64f;
+	private static float _buttonWidth = 278f;
+	private static float _buttonHeight = 125f;
 	private static float _spacing = 12f;
 	
 	private static float targetWidth = 1920f;
@@ -213,10 +214,13 @@ public class MainInterfaceManager : MonoBehaviour {
 	private static float _structureY = targetHeight-(_buttonHeight+_spacing);
 	private static float _hardnessX = _densityX+2*(_buttonWidth+_spacing);
 	private static float _hardnessY = targetHeight-(_buttonHeight+_spacing);
+
 	private static float _transparencyX = _densityX;
 	private static float _transparencyY = targetHeight-2*(_buttonHeight+_spacing);
 	private static float _colorX = _densityX+_buttonWidth+_spacing;
 	private static float _colorY = targetHeight-2*(_buttonHeight+_spacing);
+	private static float _idcardX = _densityX+2*(_buttonWidth+_spacing);
+	private static float _idcardY = targetHeight-2*(_buttonHeight+_spacing);
 	
 	private GUIStyle _buttonStyle;
     
@@ -254,6 +258,9 @@ public class MainInterfaceManager : MonoBehaviour {
 		
 		Rect colorRect = getResizedRect(_colorX, _colorY,_buttonWidth,_buttonHeight);
 		//Debug.Log("colorRect="+colorRect);
+		
+		Rect idcardRect = getResizedRect(_idcardX, _idcardY,_buttonWidth,_buttonHeight);
+		//Debug.Log("idcardRect="+idcardRect);
 
 		if(GUI.Button (densityRect, new GUIContent (densityIcon, "Pour évaluer la densité"), _buttonStyle))
 		{
@@ -274,6 +281,10 @@ public class MainInterfaceManager : MonoBehaviour {
 		if(GUI.Button (colorRect, new GUIContent (colorIcon, "Pour évaluer la couleur"), _buttonStyle))
 		{
 			onPressAnalyzeColor();
+		}
+		if(GUI.Button (idcardRect, new GUIContent (idcardIcon, "Pour afficher la carte d'identité du cristal"), _buttonStyle))
+		{
+			onPressIDCard();
 		}
 	}
 }
