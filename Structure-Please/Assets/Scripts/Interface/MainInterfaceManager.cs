@@ -10,15 +10,58 @@ public class MainInterfaceManager : MonoBehaviour {
 	public StructureCardPanel structureCardPanel;
 	public HardnessCardPanel hardnessCardPanel;
 	public ColorCardPanel colorCardPanel;
+	public WealthPanel wealthPanel;
+	public GameObject victory;
+	public GameObject fail;
+
+	public GameObject rule1;
+	public GameObject rule2;
+	public GameObject rule3;
+	public GameObject score;
+	public GameObject scoreLabel;
+	public GameObject idcardField1;
+	public GameObject idcardField2;
+	public GameObject idcardField3;
+	public GameObject idcardField4;
 	
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = .5f;
 	private int _currentIndex = 1;
 	private string _baseName = "Textures/candidates/";
 
-	public void acceptCharacter() 
+	void manageGUITexts(bool display)
+	{
+		rule1.SetActive(display);
+		rule2.SetActive(display);
+		rule3.SetActive(display);
+		score.SetActive(display);
+		scoreLabel.SetActive(display);
+		idcardField1.SetActive(display);
+		idcardField2.SetActive(display);
+		idcardField3.SetActive(display);
+		idcardField4.SetActive(display);
+	}
+
+	IEnumerator displayGameObjectForSomeTime(GameObject panel, float duration) {		
+		manageGUITexts(false);
+		panel.SetActive(true);
+		Debug.LogError("BEFORE");
+		yield return new WaitForSeconds(duration);
+		Debug.LogError("AFTER ");
+		panel.SetActive(false);
+		manageGUITexts(true);
+	}
+  
+  public void acceptCharacter() 
 	{
 		var wasRight = engine.makeDecision (true);
+		GameObject thePanel = victory;
+		if(!wasRight) 
+		{
+			thePanel = fail;
+		}
+		StartCoroutine(displayGameObjectForSomeTime(thePanel, 3f));
+
 		// TODO: say something about how the player was right or wrong
 		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
 		gotoNextCharacter ();
@@ -27,6 +70,13 @@ public class MainInterfaceManager : MonoBehaviour {
 	public void rejectCharacter() 
 	{
 		var wasRight = engine.makeDecision (false);
+		GameObject thePanel = victory;
+		if(!wasRight) 
+		{
+			thePanel = fail;
+		}
+		StartCoroutine(displayGameObjectForSomeTime(thePanel, 3f));
+
 		// TODO: say something about how the player was right or wrong
 		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
 		gotoNextCharacter ();
@@ -40,6 +90,8 @@ public class MainInterfaceManager : MonoBehaviour {
 
 		Debug.Log("MainInterfaceManager::gotoNextCharacter calls displayCrystalOnBooth");
 		displayCrystalOnBooth(engine.getCurrentCharacter());
+
+		updateWealth();
 	}
 
 	public void hideCardPanels() 
@@ -87,7 +139,8 @@ public class MainInterfaceManager : MonoBehaviour {
 			if(!performedTest) return;
 
 			densityCardPanel.display(engine.getCurrentTestResults());
-		}
+			updateWealth();
+    }
 		else
 		{
 			densityCardPanel.gameObject.SetActive (false);
@@ -98,14 +151,17 @@ public class MainInterfaceManager : MonoBehaviour {
 		Debug.Log ("onPressAnalyzeStructure");
 		if(!structureCardPanel.gameObject.activeSelf)
 		{
+			Debug.LogError ("onPressAnalyzeStructure inactive");
 			structureCardPanel.gameObject.SetActive (true);
 			bool performedTest = engine.analyzeStructure();
 			if(!performedTest) return;
 
 			structureCardPanel.display (engine.getCurrentTestResults());
-		}
+			updateWealth();
+    }
 		else
 		{
+			Debug.LogError ("onPressAnalyzeStructure active");
 			structureCardPanel.gameObject.SetActive(false);
 		}
 	}
@@ -119,7 +175,8 @@ public class MainInterfaceManager : MonoBehaviour {
 			if(!performedTest) return;
 
 			transparencyCardPanel.display (engine.getCurrentTestResults());
-		}
+			updateWealth();
+    }
 		else
 		{
 			transparencyCardPanel.gameObject.SetActive(false);
@@ -135,6 +192,7 @@ public class MainInterfaceManager : MonoBehaviour {
 			if(!performedTest) return;
 
 			hardnessCardPanel.display (engine.getCurrentTestResults());
+			updateWealth();
 		}
 		else
 		{
@@ -151,6 +209,7 @@ public class MainInterfaceManager : MonoBehaviour {
 			bool performedTest = engine.analyzeColor();
 			if(!performedTest) return;
 
+			updateWealth();
 			colorCardPanel.display (engine.getCurrentTestResults());
 		}
 		else
@@ -158,6 +217,11 @@ public class MainInterfaceManager : MonoBehaviour {
 			colorCardPanel.gameObject.SetActive (false);
 		}
 		*/
+	}
+
+	public void updateWealth() 
+	{
+		wealthPanel.display(engine.getWealth());
 	}
   
 	
@@ -170,6 +234,8 @@ public class MainInterfaceManager : MonoBehaviour {
 		_buttonStyle.border = new RectOffset(0, 0, 0, 0);
 
 		makeButtonLabels ();
+
+		updateWealth();
 	}	
 
 	// Update is called once per frame
@@ -347,14 +413,26 @@ public class MainInterfaceManager : MonoBehaviour {
 	{
 		float spacingX = 115f;
 		float spacingY = 18f;
+
+		float labelWidth = 294f;
+		float labelHeight = 135f;
+
+		float firstX = 97f;
+		float secondX = firstX + labelWidth;
+
+		float firstY = 700f;
+		float secondY = firstY+labelHeight;
+		float thirdY = secondY+labelHeight;
+
+
 		// first column
-		makeButtonLabel("ID Card", 0, 38f + spacingX, 649f + spacingY);
-		makeButtonLabel("Hammer", engine.getTestCost("Density"), 38f + spacingX, 785f + spacingY);
-		makeButtonLabel("BlackLight", engine.getTestCost("Color"), 38f + spacingX, 919f + spacingY);
+		makeButtonLabel("Identite", 0, firstX + spacingX, firstY + spacingY);
+		makeButtonLabel("Marteau", engine.getTestCost("Density"), firstX + spacingX, secondY + spacingY);
+		makeButtonLabel("Lumiere noire", engine.getTestCost("Color"), firstX + spacingX, thirdY + spacingY);
 		// second column
-		makeButtonLabel("Water", engine.getTestCost("Density"), 332f + spacingX, 649f + spacingY);
-		makeButtonLabel("Laser", engine.getTestCost("Transparency"), 332f + spacingX, 785f + spacingY);
-		makeButtonLabel("Cylcotron", engine.getTestCost("Structure"), 332f + spacingX, 919f + spacingY);
+		makeButtonLabel("Eau & balance", engine.getTestCost("Density"), secondX + spacingX, firstY + spacingY);
+		makeButtonLabel("Laser", engine.getTestCost("Transparency"), secondX + spacingX, secondY + spacingY);
+		makeButtonLabel("Cyclotron", engine.getTestCost("Structure"), secondX + spacingX, thirdY + spacingY);
 	}
 
 	void makeButtonLabel(string name, int price, float x, float y)

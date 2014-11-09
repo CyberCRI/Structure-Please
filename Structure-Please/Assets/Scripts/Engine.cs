@@ -48,23 +48,30 @@ public class Engine : MonoBehaviour {
 
 	public void gotoNextCharacter() 
 	{
+		nextCharacterIndex = nextCharacterIndex > characters.Count-1 ? 0 : nextCharacterIndex;
 		currentCharacter = characters [nextCharacterIndex++];
 		currentTestResults = new Crystal ();
 	}
 	
 
 	// Returns true if decision is correct, false otherwise
+	//TODO manage false positives and negatives
 	public bool makeDecision(bool accept) 
 	{
-		bool isReal = currentCharacter.pretendsToBe.name == currentCharacter.reallyIs.name;
-		bool isCorrect = isReal == accept;
+		//bool isReal = currentCharacter.pretendsToBe.name == currentCharacter.reallyIs.name;
+		//bool isCorrect = isReal == accept;
+
+		bool isCorrect = currentCharacter.reallyIs.isPrecious;
+
 		if (isCorrect) 
 		{
+			Debug.LogError("isCorrect");
 			wealth += currentCharacter.prize;
 		} 
 		else 
 		{
-
+			Debug.LogError("NOOOOOT");
+			wealth -= currentCharacter.prize;
 		}
 		return isCorrect;
 	}
@@ -82,9 +89,10 @@ public class Engine : MonoBehaviour {
 	// Returns true if test is performed, else false
 	public bool analyzeStructure() 
 	{
-		if (string.IsNullOrEmpty(currentTestResults.structure)) return false;
+		if (!string.IsNullOrEmpty(currentTestResults.structure)) return false;
 		
 		currentTestResults.structure = currentCharacter.reallyIs.structure;
+		Debug.LogError("currentTestResults.structure="+currentTestResults.structure);
 		wealth -= testCosts["Structure"];
 		return true;
 	}
@@ -148,6 +156,7 @@ public class Engine : MonoBehaviour {
 			crystal.transparency = bool.Parse(crystalData["Transparency"]);
 			crystal.hardness = float.Parse(crystalData["Hardness"]);
 			crystal.color = crystalData["Color"];
+			crystal.isPrecious = bool.Parse (crystalData["IsPrecious"]);
 
 			crystals[crystal.name] = crystal;
 		}
@@ -161,6 +170,7 @@ public class Engine : MonoBehaviour {
 
 			character.name = characterData["Name"];
 			character.age = int.Parse(characterData["Age"]);
+			character.prize = int.Parse(characterData["Prize"]);
 			character.picture = characterData["Picture"];
 			character.pretendsToBe = crystals[characterData["PretendsToBe"]];
 			character.reallyIs = crystals[characterData["ReallyIs"]];
