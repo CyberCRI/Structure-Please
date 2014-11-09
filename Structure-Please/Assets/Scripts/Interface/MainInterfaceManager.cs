@@ -37,7 +37,8 @@ public class MainInterfaceManager : MonoBehaviour {
 		hideCardPanels ();
 		hideCrystalOnBooth ();
 		engine.gotoNextCharacter ();
-		
+
+		Debug.Log("MainInterfaceManager::gotoNextCharacter calls displayCrystalOnBooth");
 		displayCrystalOnBooth(engine.getCurrentCharacter());
 	}
 
@@ -53,12 +54,14 @@ public class MainInterfaceManager : MonoBehaviour {
 	
 	public void displayCrystalOnBooth(Character character)
 	{	
-		Sprite sprite = Resources.Load<Sprite>(character.picture);
+		Debug.Log("MainInterfaceManager::displayCrystalOnBooth("+character.picture+")");
+		Sprite sprite = Resources.Load<Sprite>(_baseName+character.picture);
 		displayCrystalOnBooth(sprite);
 	}
 	
 	public void displayCrystalOnBooth(Sprite sprite)
 	{
+		Debug.Log("MainInterfaceManager::displayCrystal("+sprite.name+")");
 		crystalCandidateZone.gameObject.SetActive(true);
 		crystalCandidateZone.displayCrystal(sprite);    
     }
@@ -70,6 +73,7 @@ public class MainInterfaceManager : MonoBehaviour {
 
 	public void onPressIDCard()
 	{
+		Debug.Log("MainInterfaceManager::onPressIDCard");
 		resultPanel.displayIDCard(engine.getCurrentCharacter());
 	}
 	
@@ -137,9 +141,9 @@ public class MainInterfaceManager : MonoBehaviour {
 		{
 			//int i = Mathf.FloorToInt(Random.value*2+1);
 			_currentIndex = (_currentIndex+1) %3 + 1;
-			string name = _baseName+_currentIndex;
+			string name = _currentIndex.ToString();
 			Debug.Log("display "+_currentIndex+" ie "+name);
-			Sprite sprite = Resources.Load<Sprite>(name);
+			Sprite sprite = Resources.Load<Sprite>(_baseName+name);
 			displayCrystalOnBooth(sprite);
 			_timeSinceLastPressed = 0;
 		}

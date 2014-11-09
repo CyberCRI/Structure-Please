@@ -6,6 +6,7 @@ public class ResultPanel : MonoBehaviour {
 
 	public void displayIDCard(Character character)
 	{
+		Debug.Log("ResultPanel::onPressIDCard("+character+")");
 		if(!identityCardPanel.gameObject.activeInHierarchy)
 		{
 			identityCardPanel.gameObject.SetActive(true);
@@ -19,6 +20,7 @@ public class ResultPanel : MonoBehaviour {
 
 	public void displayIDCard()
 	{
+		Debug.Log("ResultPanel::onPressIDCard()");
 		identityCardPanel.gameObject.SetActive(false);
 	}
 

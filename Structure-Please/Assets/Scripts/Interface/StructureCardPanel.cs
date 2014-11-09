@@ -22,8 +22,8 @@ public class StructureCardPanel : MonoBehaviour {
 	{
 		structureText.text = testResults.structure;
 
-		string name = _baseName+testResults.picture;
-		Sprite sprite = Resources.Load<Sprite>(name);
+		string name = testResults.picture;
+		Sprite sprite = Resources.Load<Sprite>(_baseName+name);
 		idPicture.sprite = sprite;
 
 	}

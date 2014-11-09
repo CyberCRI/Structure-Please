@@ -28,6 +28,7 @@ public class IdentityCardPanel : MonoBehaviour {
 
 	public void displayCrystal(Character character)
 	{
+		Debug.Log("IdentityCardPanel::displayCrystal("+character+")");
 		Crystal pretendsToBe = character.pretendsToBe;
 
 		crystalName.text = character.name;
@@ -39,8 +40,9 @@ public class IdentityCardPanel : MonoBehaviour {
 		hardness.text = pretendsToBe.hardness.HasValue?pretendsToBe.hardness.Value.ToString():"?";
 		color.text = pretendsToBe.color;
 
-		string name = _baseName+character.picture;
-		Sprite sprite = Resources.Load<Sprite>(name);
+		string name = character.picture;
+		Sprite sprite = Resources.Load<Sprite>(_baseName+name);
+		Debug.Log("IdentityCardPanel::displayCrystal("+character+") name="+name+", sprite="+sprite);
 		idPicture.sprite = sprite;
 	}
 }
