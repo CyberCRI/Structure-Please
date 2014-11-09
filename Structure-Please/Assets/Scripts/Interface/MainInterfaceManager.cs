@@ -240,6 +240,7 @@ public class MainInterfaceManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		updateWealth();
 		_timeSinceLastPressed += Time.deltaTime;
 		//booth
 		if(Input.GetKey(KeyCode.B) && (_timeSinceLastPressed > _timeBetweenTwoPressed))

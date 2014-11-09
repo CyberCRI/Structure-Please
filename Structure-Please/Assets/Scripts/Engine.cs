@@ -19,6 +19,8 @@ public class Engine : MonoBehaviour {
 	Character currentCharacter;
 	Crystal currentTestResults;
 	int wealth = 20;
+	private float _cumulatedLoss = 0;
+	private float _lossPerSecond = 0.2f;
 
 
 	// Getters:
@@ -138,6 +140,20 @@ public class Engine : MonoBehaviour {
 		testsCsv = Resources.Load<TextAsset> ("CSV/tests");
 	
 		loadData ();
+	}
+
+	void Update ()
+	{
+		//loses 1 per 5 seconds
+		_cumulatedLoss = _cumulatedLoss + Time.deltaTime*_lossPerSecond;
+		Debug.Log(_cumulatedLoss);
+		int loss = Mathf.FloorToInt(_cumulatedLoss);
+		if (loss > 0)
+		{
+			Debug.LogWarning("WEALTH="+wealth);
+			wealth -= loss;
+			_cumulatedLoss -= loss;
+		}
 	}
 
 	void loadData()
