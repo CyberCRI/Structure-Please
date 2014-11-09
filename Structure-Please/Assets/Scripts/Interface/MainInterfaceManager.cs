@@ -11,15 +11,28 @@ public class MainInterfaceManager : MonoBehaviour {
 	public HardnessCardPanel hardnessCardPanel;
 	public ColorCardPanel colorCardPanel;
 	public WealthPanel wealthPanel;
+	public GameObject victory;
+	public GameObject fail;
 	
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = .5f;
 	private int _currentIndex = 1;
 	private string _baseName = "Textures/candidates/";
 
-	public void acceptCharacter() 
+	IEnumerator Example() {		
+		victory.SetActive(true);
+		yield return new WaitForSeconds(3);
+		victory.SetActive(false);
+	}
+  
+  public void acceptCharacter() 
 	{
 		var wasRight = engine.makeDecision (true);
+		if(wasRight) 
+		{
+			Example();
+		}
+
 		// TODO: say something about how the player was right or wrong
 		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
 		gotoNextCharacter ();
