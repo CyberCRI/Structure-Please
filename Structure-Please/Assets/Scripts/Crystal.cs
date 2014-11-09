@@ -9,6 +9,7 @@ public class Crystal {
 	public bool? transparency;
 	public float? hardness;
 	public string color;
+	public bool isPrecious;
 
 	public Crystal clone() {
 		return (Crystal)this.MemberwiseClone ();

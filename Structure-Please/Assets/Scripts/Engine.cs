@@ -58,8 +58,11 @@ public class Engine : MonoBehaviour {
 	//TODO manage false positives and negatives
 	public bool makeDecision(bool accept) 
 	{
-		bool isReal = currentCharacter.pretendsToBe.name == currentCharacter.reallyIs.name;
-		bool isCorrect = isReal == accept;
+		//bool isReal = currentCharacter.pretendsToBe.name == currentCharacter.reallyIs.name;
+		//bool isCorrect = isReal == accept;
+
+		bool isCorrect = currentCharacter.reallyIs.isPrecious;
+
 		if (isCorrect) 
 		{
 			Debug.LogError("isCorrect");
@@ -153,6 +156,7 @@ public class Engine : MonoBehaviour {
 			crystal.transparency = bool.Parse(crystalData["Transparency"]);
 			crystal.hardness = float.Parse(crystalData["Hardness"]);
 			crystal.color = crystalData["Color"];
+			crystal.isPrecious = bool.Parse (crystalData["IsPrecious"]);
 
 			crystals[crystal.name] = crystal;
 		}
