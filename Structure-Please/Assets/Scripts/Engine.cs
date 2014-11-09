@@ -48,6 +48,7 @@ public class Engine : MonoBehaviour {
 
 	public void gotoNextCharacter() 
 	{
+		nextCharacterIndex = nextCharacterIndex > characters.Count-1 ? 0 : nextCharacterIndex;
 		currentCharacter = characters [nextCharacterIndex++];
 		currentTestResults = new Crystal ();
 	}
