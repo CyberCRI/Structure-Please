@@ -123,6 +123,10 @@ public class MainInterfaceManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gotoNextCharacter ();
+		_buttonStyle = new GUIStyle();
+		_buttonStyle.fixedWidth = 0f;
+		_buttonStyle.fixedHeight = 0f;
+		_buttonStyle.border = new RectOffset(0, 0, 0, 0);
     }	
 
 	// Update is called once per frame
@@ -214,6 +218,8 @@ public class MainInterfaceManager : MonoBehaviour {
 	private static float _colorX = _densityX+_buttonWidth+_spacing;
 	private static float _colorY = targetHeight-2*(_buttonHeight+_spacing);
 	
+	private GUIStyle _buttonStyle;
+    
 	private Rect resizeGUI(Rect rect)
 	{		
 		return getResizedRect(rect.x, rect.y, rect.width, rect.height);
@@ -232,7 +238,8 @@ public class MainInterfaceManager : MonoBehaviour {
 		return new Rect(rectX, rectY, rectWidth, rectHeight);
 	}
 	
-	void OnGUI () {		
+	void OnGUI () {
+
 		Rect densityRect = getResizedRect(_densityX, _densityY,_buttonWidth,_buttonHeight);
 		//Debug.Log("densityRect="+densityRect);
 		
@@ -248,23 +255,23 @@ public class MainInterfaceManager : MonoBehaviour {
 		Rect colorRect = getResizedRect(_colorX, _colorY,_buttonWidth,_buttonHeight);
 		//Debug.Log("colorRect="+colorRect);
 
-		if(GUI.Button (densityRect, new GUIContent (densityIcon, "Pour évaluer la densité")))
+		if(GUI.Button (densityRect, new GUIContent (densityIcon, "Pour évaluer la densité"), _buttonStyle))
 		{
 			onPressAnalyzeDensity();
 		}
-		if(GUI.Button (structureRect, new GUIContent (structureIcon, "Pour évaluer la géométrie")))
+		if(GUI.Button (structureRect, new GUIContent (structureIcon, "Pour évaluer la géométrie"), _buttonStyle))
 		{
 			onPressAnalyzeStructure();
 		}
-		if(GUI.Button (hardnessRect, new GUIContent (hardnessIcon, "Pour évaluer la dureté")))
+		if(GUI.Button (hardnessRect, new GUIContent (hardnessIcon, "Pour évaluer la dureté"), _buttonStyle))
 		{
 			onPressAnalyzeHardness();
 		}
-		if(GUI.Button (transparencyRect, new GUIContent (transparencyIcon, "Pour évaluer la transparence")))
+		if(GUI.Button (transparencyRect, new GUIContent (transparencyIcon, "Pour évaluer la transparence"), _buttonStyle))
 		{
 			onPressAnalyzeTransparency();
 		}
-		if(GUI.Button (colorRect, new GUIContent (colorIcon, "Pour évaluer la couleur")))
+		if(GUI.Button (colorRect, new GUIContent (colorIcon, "Pour évaluer la couleur"), _buttonStyle))
 		{
 			onPressAnalyzeColor();
 		}
