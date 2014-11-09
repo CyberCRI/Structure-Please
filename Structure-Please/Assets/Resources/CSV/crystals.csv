@@ -1,8 +1,8 @@
 Name,Picture,Density,Structure,Transparency,Hardness,Color
 Gold,gold.png,34,orStructure.png,TRUE,4,blue
-Graphite,,2.1,,FALSE,1.5,black
-Diamant incolore,,3.5,,TRUE,10,incolor
-Diamant noir,,3.5,,TRUE,10,black
-Lonsdaléite,,3.3,,TRUE,3,red
-Quartz,,2.6,,TRUE,7,incolor
-Rubis,,4,,TRUE,9,red
+Graphite,graphite,2.1,graphite,FALSE,1.5,noir
+Diamant incolore,diamond,3.5,diamant,TRUE,10,incolore
+Diamant noir,blackdiamond,3.5,diamant,TRUE,10,noir
+Lonsdaléite,lonsdaleite,3.3,lonsdaleite,TRUE,3,rouge
+Quartz,quartz,2.6,quartz,TRUE,7,incolore
+Rubis,ruby,4,rubis,TRUE,9,rouge

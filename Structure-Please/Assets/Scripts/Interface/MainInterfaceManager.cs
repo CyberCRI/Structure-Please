@@ -98,6 +98,7 @@ public class MainInterfaceManager : MonoBehaviour {
 		Debug.Log ("onPressAnalyzeStructure");
 		if(!structureCardPanel.gameObject.activeSelf)
 		{
+			Debug.LogError ("onPressAnalyzeStructure inactive");
 			structureCardPanel.gameObject.SetActive (true);
 			bool performedTest = engine.analyzeStructure();
 			if(!performedTest) return;
@@ -106,6 +107,7 @@ public class MainInterfaceManager : MonoBehaviour {
 		}
 		else
 		{
+			Debug.LogError ("onPressAnalyzeStructure active");
 			structureCardPanel.gameObject.SetActive(false);
 		}
 	}
@@ -347,14 +349,26 @@ public class MainInterfaceManager : MonoBehaviour {
 	{
 		float spacingX = 115f;
 		float spacingY = 18f;
+
+		float labelWidth = 294f;
+		float labelHeight = 135f;
+
+		float firstX = 97f;
+		float secondX = firstX + labelWidth;
+
+		float firstY = 700f;
+		float secondY = firstY+labelHeight;
+		float thirdY = secondY+labelHeight;
+
+
 		// first column
-		makeButtonLabel("ID Card", 0, 38f + spacingX, 649f + spacingY);
-		makeButtonLabel("Hammer", engine.getTestCost("Density"), 38f + spacingX, 785f + spacingY);
-		makeButtonLabel("BlackLight", engine.getTestCost("Color"), 38f + spacingX, 919f + spacingY);
+		makeButtonLabel("Identite", 0, firstX + spacingX, firstY + spacingY);
+		makeButtonLabel("Marteau", engine.getTestCost("Density"), firstX + spacingX, secondY + spacingY);
+		makeButtonLabel("Lumiere noire", engine.getTestCost("Color"), firstX + spacingX, thirdY + spacingY);
 		// second column
-		makeButtonLabel("Water", engine.getTestCost("Density"), 332f + spacingX, 649f + spacingY);
-		makeButtonLabel("Laser", engine.getTestCost("Transparency"), 332f + spacingX, 785f + spacingY);
-		makeButtonLabel("Cylcotron", engine.getTestCost("Structure"), 332f + spacingX, 919f + spacingY);
+		makeButtonLabel("Eau & balance", engine.getTestCost("Density"), secondX + spacingX, firstY + spacingY);
+		makeButtonLabel("Laser", engine.getTestCost("Transparency"), secondX + spacingX, secondY + spacingY);
+		makeButtonLabel("Cyclotron", engine.getTestCost("Structure"), secondX + spacingX, thirdY + spacingY);
 	}
 
 	void makeButtonLabel(string name, int price, float x, float y)

@@ -82,9 +82,10 @@ public class Engine : MonoBehaviour {
 	// Returns true if test is performed, else false
 	public bool analyzeStructure() 
 	{
-		if (string.IsNullOrEmpty(currentTestResults.structure)) return false;
+		if (!string.IsNullOrEmpty(currentTestResults.structure)) return false;
 		
 		currentTestResults.structure = currentCharacter.reallyIs.structure;
+		Debug.LogError("currentTestResults.structure="+currentTestResults.structure);
 		wealth -= testCosts["Structure"];
 		return true;
 	}
