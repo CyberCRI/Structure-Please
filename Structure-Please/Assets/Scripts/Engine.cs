@@ -38,6 +38,11 @@ public class Engine : MonoBehaviour {
 		return wealth;
 	}
 
+	public int getTestCost(string test) 
+	{
+		return testCosts [test];
+	}
+
 
 	// Public methods:
 
