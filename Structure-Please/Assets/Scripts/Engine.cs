@@ -54,6 +54,7 @@ public class Engine : MonoBehaviour {
 	
 
 	// Returns true if decision is correct, false otherwise
+	//TODO manage false positives and negatives
 	public bool makeDecision(bool accept) 
 	{
 		bool isReal = currentCharacter.pretendsToBe.name == currentCharacter.reallyIs.name;
@@ -66,6 +67,7 @@ public class Engine : MonoBehaviour {
 		else 
 		{
 			Debug.LogError("NOOOOOT");
+			wealth -= currentCharacter.prize;
 		}
 		return isCorrect;
 	}

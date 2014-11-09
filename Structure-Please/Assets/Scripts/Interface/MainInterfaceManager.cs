@@ -13,25 +13,54 @@ public class MainInterfaceManager : MonoBehaviour {
 	public WealthPanel wealthPanel;
 	public GameObject victory;
 	public GameObject fail;
+
+	public GameObject rule1;
+	public GameObject rule2;
+	public GameObject rule3;
+	public GameObject score;
+	public GameObject scoreLabel;
+	public GameObject idcardField1;
+	public GameObject idcardField2;
+	public GameObject idcardField3;
+	public GameObject idcardField4;
 	
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = .5f;
 	private int _currentIndex = 1;
 	private string _baseName = "Textures/candidates/";
 
-	IEnumerator Example() {		
-		victory.SetActive(true);
-		yield return new WaitForSeconds(3);
-		victory.SetActive(false);
+	void manageGUITexts(bool display)
+	{
+		rule1.SetActive(display);
+		rule2.SetActive(display);
+		rule3.SetActive(display);
+		score.SetActive(display);
+		scoreLabel.SetActive(display);
+		idcardField1.SetActive(display);
+		idcardField2.SetActive(display);
+		idcardField3.SetActive(display);
+		idcardField4.SetActive(display);
+	}
+
+	IEnumerator displayGameObjectForSomeTime(GameObject panel, float duration) {		
+		manageGUITexts(false);
+		panel.SetActive(true);
+		Debug.LogError("BEFORE");
+		yield return new WaitForSeconds(duration);
+		Debug.LogError("AFTER ");
+		panel.SetActive(false);
+		manageGUITexts(true);
 	}
   
   public void acceptCharacter() 
 	{
 		var wasRight = engine.makeDecision (true);
-		if(wasRight) 
+		GameObject thePanel = victory;
+		if(!wasRight) 
 		{
-			Example();
+			thePanel = fail;
 		}
+		StartCoroutine(displayGameObjectForSomeTime(thePanel, 3f));
 
 		// TODO: say something about how the player was right or wrong
 		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
@@ -41,6 +70,13 @@ public class MainInterfaceManager : MonoBehaviour {
 	public void rejectCharacter() 
 	{
 		var wasRight = engine.makeDecision (false);
+		GameObject thePanel = victory;
+		if(!wasRight) 
+		{
+			thePanel = fail;
+		}
+		StartCoroutine(displayGameObjectForSomeTime(thePanel, 3f));
+
 		// TODO: say something about how the player was right or wrong
 		Debug.Log ("You were " + (wasRight ? "right" : "wrong"));
 		gotoNextCharacter ();
