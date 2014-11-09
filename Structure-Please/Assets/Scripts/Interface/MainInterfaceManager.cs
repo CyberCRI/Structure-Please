@@ -10,6 +10,7 @@ public class MainInterfaceManager : MonoBehaviour {
 	public StructureCardPanel structureCardPanel;
 	public HardnessCardPanel hardnessCardPanel;
 	public ColorCardPanel colorCardPanel;
+	public WealthPanel wealthPanel;
 	
 	private float _timeSinceLastPressed = 0;
 	private float _timeBetweenTwoPressed = .5f;
@@ -40,6 +41,8 @@ public class MainInterfaceManager : MonoBehaviour {
 
 		Debug.Log("MainInterfaceManager::gotoNextCharacter calls displayCrystalOnBooth");
 		displayCrystalOnBooth(engine.getCurrentCharacter());
+
+		updateWealth();
 	}
 
 	public void hideCardPanels() 
@@ -87,7 +90,8 @@ public class MainInterfaceManager : MonoBehaviour {
 			if(!performedTest) return;
 
 			densityCardPanel.display(engine.getCurrentTestResults());
-		}
+			updateWealth();
+    }
 		else
 		{
 			densityCardPanel.gameObject.SetActive (false);
@@ -104,7 +108,8 @@ public class MainInterfaceManager : MonoBehaviour {
 			if(!performedTest) return;
 
 			structureCardPanel.display (engine.getCurrentTestResults());
-		}
+			updateWealth();
+    }
 		else
 		{
 			Debug.LogError ("onPressAnalyzeStructure active");
@@ -121,7 +126,8 @@ public class MainInterfaceManager : MonoBehaviour {
 			if(!performedTest) return;
 
 			transparencyCardPanel.display (engine.getCurrentTestResults());
-		}
+			updateWealth();
+    }
 		else
 		{
 			transparencyCardPanel.gameObject.SetActive(false);
@@ -137,6 +143,7 @@ public class MainInterfaceManager : MonoBehaviour {
 			if(!performedTest) return;
 
 			hardnessCardPanel.display (engine.getCurrentTestResults());
+			updateWealth();
 		}
 		else
 		{
@@ -153,6 +160,7 @@ public class MainInterfaceManager : MonoBehaviour {
 			bool performedTest = engine.analyzeColor();
 			if(!performedTest) return;
 
+			updateWealth();
 			colorCardPanel.display (engine.getCurrentTestResults());
 		}
 		else
@@ -160,6 +168,11 @@ public class MainInterfaceManager : MonoBehaviour {
 			colorCardPanel.gameObject.SetActive (false);
 		}
 		*/
+	}
+
+	public void updateWealth() 
+	{
+		wealthPanel.display(engine.getWealth());
 	}
   
 	
@@ -172,6 +185,8 @@ public class MainInterfaceManager : MonoBehaviour {
 		_buttonStyle.border = new RectOffset(0, 0, 0, 0);
 
 		makeButtonLabels ();
+
+		updateWealth();
 	}	
 
 	// Update is called once per frame

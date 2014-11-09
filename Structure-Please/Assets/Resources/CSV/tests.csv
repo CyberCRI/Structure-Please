@@ -2,5 +2,6 @@ Test,Property,Cost
 Water,Density,1
 Laser,Transparency,2
 Cyclotron,Structure,8
-Hammer,Hardness,4
+Hammer,Hardness,1
 BlackLight,Color,6
+IDCard,idcard,0

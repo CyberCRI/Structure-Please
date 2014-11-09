@@ -60,11 +60,12 @@ public class Engine : MonoBehaviour {
 		bool isCorrect = isReal == accept;
 		if (isCorrect) 
 		{
+			Debug.LogError("isCorrect");
 			wealth += currentCharacter.prize;
 		} 
 		else 
 		{
-
+			Debug.LogError("NOOOOOT");
 		}
 		return isCorrect;
 	}
@@ -162,6 +163,7 @@ public class Engine : MonoBehaviour {
 
 			character.name = characterData["Name"];
 			character.age = int.Parse(characterData["Age"]);
+			character.prize = int.Parse(characterData["Prize"]);
 			character.picture = characterData["Picture"];
 			character.pretendsToBe = crystals[characterData["PretendsToBe"]];
 			character.reallyIs = crystals[characterData["ReallyIs"]];
