@@ -432,7 +432,7 @@ public class MainInterfaceManager : MonoBehaviour {
 		// second column
 		makeButtonLabel("Eau & balance", engine.getTestCost("Density"), secondX + spacingX, firstY + spacingY);
 		makeButtonLabel("Laser", engine.getTestCost("Transparency"), secondX + spacingX, secondY + spacingY);
-		makeButtonLabel("Cyclotron", engine.getTestCost("Structure"), secondX + spacingX, thirdY + spacingY);
+		makeButtonLabel("Synchrotron", engine.getTestCost("Structure"), secondX + spacingX, thirdY + spacingY);
 	}
 
 	void makeButtonLabel(string name, int price, float x, float y)
