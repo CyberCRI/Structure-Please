@@ -63,7 +63,7 @@ public class Engine : MonoBehaviour {
 		//bool isReal = currentCharacter.pretendsToBe.name == currentCharacter.reallyIs.name;
 		//bool isCorrect = isReal == accept;
 
-		bool isCorrect = currentCharacter.reallyIs.isPrecious;
+		bool isCorrect = (currentCharacter.reallyIs.isPrecious == accept);
 
 		if (isCorrect) 
 		{

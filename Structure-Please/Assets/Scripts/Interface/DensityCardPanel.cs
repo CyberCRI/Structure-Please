@@ -38,6 +38,6 @@ public class DensityCardPanel : MonoBehaviour {
 
 		volumeText.text = volume.ToString() + "l";
 		massText.text = mass.ToString() + "kg";
-		densityText.text = testResults.density.ToString() + "kg/l";
+		densityText.text = testResults.density.ToString();// + "kg/l";
 	}
 }
