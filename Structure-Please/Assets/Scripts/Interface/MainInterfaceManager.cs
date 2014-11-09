@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class MainInterfaceManager : MonoBehaviour {
@@ -168,7 +168,9 @@ public class MainInterfaceManager : MonoBehaviour {
 		_buttonStyle.fixedWidth = 0f;
 		_buttonStyle.fixedHeight = 0f;
 		_buttonStyle.border = new RectOffset(0, 0, 0, 0);
-    }	
+
+		makeButtonLabels ();
+	}	
 
 	// Update is called once per frame
 	void Update () {
@@ -249,19 +251,21 @@ public class MainInterfaceManager : MonoBehaviour {
 	private static float targetWidth = 1920f;
 	private static float targetHeight = 1080f;
 
-	private static float _densityX = 120f;
-	private static float _densityY = targetHeight-(_buttonHeight+_spacing);
-	private static float _structureX = _densityX+_buttonWidth+_spacing;
-	private static float _structureY = targetHeight-(_buttonHeight+_spacing);
-	private static float _hardnessX = _densityX+2*(_buttonWidth+_spacing);
-	private static float _hardnessY = targetHeight-(_buttonHeight+_spacing);
+	// first column 
+	private static float _idcardX = 38f;
+	private static float _idcardY = 649f;
+	private static float _hardnessX = 38f;
+	private static float _hardnessY = 785f;
+	private static float _colorX = 38f;
+	private static float _colorY = 919f;
 
-	private static float _transparencyX = _densityX;
-	private static float _transparencyY = targetHeight-2*(_buttonHeight+_spacing);
-	private static float _colorX = _densityX+_buttonWidth+_spacing;
-	private static float _colorY = targetHeight-2*(_buttonHeight+_spacing);
-	private static float _idcardX = _densityX+2*(_buttonWidth+_spacing);
-	private static float _idcardY = targetHeight-2*(_buttonHeight+_spacing);
+	// second column
+	private static float _densityX = 332f;
+	private static float _densityY = 649f;
+	private static float _transparencyX = 332f;
+	private static float _transparencyY = 785f;
+	private static float _structureX = 332f;
+	private static float _structureY = 919f;
 	
 	private GUIStyle _buttonStyle;
     
@@ -284,7 +288,6 @@ public class MainInterfaceManager : MonoBehaviour {
 	}
 	
 	void OnGUI () {
-
 		Rect densityRect = getResizedRect(_densityX, _densityY,_buttonWidth,_buttonHeight);
 		//Debug.Log("densityRect="+densityRect);
 		
@@ -303,29 +306,63 @@ public class MainInterfaceManager : MonoBehaviour {
 		Rect idcardRect = getResizedRect(_idcardX, _idcardY,_buttonWidth,_buttonHeight);
 		//Debug.Log("idcardRect="+idcardRect);
 
-		if(GUI.Button (densityRect, new GUIContent (densityIcon, "Pour évaluer la densité"), _buttonStyle))
+		Rect acceptRect = getResizedRect(1675f, 486f, 165f, 162f);
+		Rect rejectRect = getResizedRect(1675f, 683f, 165f, 166f);
+
+		if(GUI.Button (densityRect, new GUIContent (), _buttonStyle))
 		{
 			onPressAnalyzeDensity();
 		}
-		if(GUI.Button (structureRect, new GUIContent (structureIcon, "Pour évaluer la géométrie"), _buttonStyle))
+		if(GUI.Button (structureRect, new GUIContent (), _buttonStyle))
 		{
 			onPressAnalyzeStructure();
 		}
-		if(GUI.Button (hardnessRect, new GUIContent (hardnessIcon, "Pour évaluer la dureté"), _buttonStyle))
+		if(GUI.Button (hardnessRect, new GUIContent (), _buttonStyle))
 		{
 			onPressAnalyzeHardness();
 		}
-		if(GUI.Button (transparencyRect, new GUIContent (transparencyIcon, "Pour évaluer la transparence"), _buttonStyle))
+		if(GUI.Button (transparencyRect, new GUIContent (), _buttonStyle))
 		{
 			onPressAnalyzeTransparency();
 		}
-		if(GUI.Button (colorRect, new GUIContent (colorIcon, "Pour évaluer la couleur"), _buttonStyle))
+		if(GUI.Button (colorRect, new GUIContent (), _buttonStyle))
 		{
 			onPressAnalyzeColor();
 		}
-		if(GUI.Button (idcardRect, new GUIContent (idcardIcon, "Pour afficher la carte d'identité du cristal"), _buttonStyle))
+		if(GUI.Button (idcardRect, new GUIContent (), _buttonStyle))
 		{
 			onPressIDCard();
 		}
+		if(GUI.Button (acceptRect, new GUIContent (), _buttonStyle))
+		{
+			acceptCharacter();
+		}
+		if(GUI.Button (rejectRect, new GUIContent (), _buttonStyle))
+		{
+			rejectCharacter();
+		}
+	}
+
+	void makeButtonLabels() 
+	{
+		float spacingX = 115f;
+		float spacingY = 18f;
+		// first column
+		makeButtonLabel("ID Card", 0, 38f + spacingX, 649f + spacingY);
+		makeButtonLabel("Hammer", engine.getTestCost("Density"), 38f + spacingX, 785f + spacingY);
+		makeButtonLabel("BlackLight", engine.getTestCost("Color"), 38f + spacingX, 919f + spacingY);
+		// second column
+		makeButtonLabel("Water", engine.getTestCost("Density"), 332f + spacingX, 649f + spacingY);
+		makeButtonLabel("Laser", engine.getTestCost("Transparency"), 332f + spacingX, 785f + spacingY);
+		makeButtonLabel("Cylcotron", engine.getTestCost("Structure"), 332f + spacingX, 919f + spacingY);
+	}
+
+	void makeButtonLabel(string name, int price, float x, float y)
+	{
+		GameObject buttonLabelPrefab = Resources.Load<GameObject> ("ButtonLabel");
+
+		GameObject instance = Instantiate (buttonLabelPrefab, new Vector3 (x / 1920f, 1f - y / 1080f, 0f), Quaternion.identity) as GameObject;
+		instance.transform.FindChild ("Name").guiText.text = name;
+		instance.transform.FindChild ("Price").guiText.text = price > 0 ? price.ToString() + " kE" : "";
 	}
 }
