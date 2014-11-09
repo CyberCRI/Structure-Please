@@ -1,0 +1,1367 @@
+fileFormatVersion: 2
+guid: d688dc164b66b41abafb952ac2f7404a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: structure_0
+    21300002: structure_1
+    21300004: structure_2
+    21300006: structure_3
+    21300008: structure_4
+    21300010: structure_5
+    21300012: structure_6
+    21300014: structure_7
+    21300016: structure_8
+    21300018: structure_9
+    21300020: structure_10
+    21300022: structure_11
+    21300024: structure_12
+    21300026: structure_13
+    21300028: structure_14
+    21300030: structure_15
+    21300032: structure_16
+    21300034: structure_17
+    21300036: structure_18
+    21300038: structure_19
+    21300040: structure_20
+    21300042: structure_21
+    21300044: structure_22
+    21300046: structure_23
+    21300048: structure_24
+    21300050: structure_25
+    21300052: structure_26
+    21300054: structure_27
+    21300056: structure_28
+    21300058: structure_29
+    21300060: structure_30
+    21300062: structure_31
+    21300064: structure_32
+    21300066: structure_33
+    21300068: structure_34
+    21300070: structure_35
+    21300072: structure_36
+    21300074: structure_37
+    21300076: structure_38
+    21300078: structure_39
+    21300080: structure_40
+    21300082: structure_41
+    21300084: structure_42
+    21300086: structure_43
+    21300088: structure_44
+    21300090: structure_45
+    21300092: structure_46
+    21300094: structure_47
+    21300096: structure_48
+    21300098: structure_49
+    21300100: structure_50
+    21300102: structure_51
+    21300104: structure_52
+    21300106: structure_53
+    21300108: structure_54
+    21300110: structure_55
+    21300112: structure_56
+    21300114: structure_57
+    21300116: structure_58
+    21300118: structure_59
+    21300120: structure_60
+    21300122: structure_61
+    21300124: structure_62
+    21300126: structure_63
+    21300128: structure_64
+    21300130: structure_65
+    21300132: structure_66
+    21300134: structure_67
+    21300136: structure_68
+    21300138: structure_69
+    21300140: structure_70
+    21300142: structure_71
+    21300144: structure_72
+    21300146: structure_73
+    21300148: structure_74
+    21300150: structure_75
+    21300152: structure_76
+    21300154: structure_77
+    21300156: structure_78
+    21300158: structure_79
+    21300160: structure_80
+    21300162: structure_81
+    21300164: structure_82
+    21300166: structure_83
+    21300168: structure_84
+    21300170: structure_85
+    21300172: structure_86
+    21300174: structure_87
+    21300176: structure_88
+    21300178: structure_89
+    21300180: structure_90
+    21300182: structure_91
+    21300184: structure_92
+    21300186: structure_93
+    21300188: structure_94
+    21300190: structure_95
+    21300192: structure_96
+    21300194: structure_97
+    21300196: structure_98
+    21300198: structure_99
+    21300200: structure_100
+    21300202: structure_101
+    21300204: structure_102
+    21300206: structure_103
+    21300208: structure_104
+    21300210: structure_105
+    21300212: structure_106
+    21300214: structure_107
+    21300216: structure_108
+    21300218: structure_109
+    21300220: structure_110
+    21300222: structure_111
+    21300224: structure_112
+    21300226: structure_113
+    21300228: structure_114
+    21300230: structure_115
+    21300232: structure_116
+    21300234: structure_117
+    21300236: structure_118
+    21300238: structure_119
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: structure_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_2
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_3
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_4
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_5
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_6
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_7
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_8
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_9
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_12
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_13
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_14
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_15
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_16
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_17
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_18
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_19
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_21
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_22
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_23
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_24
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_25
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_26
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_27
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_28
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_29
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_31
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_32
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_33
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_34
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_35
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_36
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_37
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_38
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_39
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_41
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_42
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_43
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_44
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_45
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_46
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_47
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_48
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_49
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_51
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_52
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_53
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_54
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_55
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_56
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_57
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_58
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_59
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_61
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_62
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_63
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_64
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_65
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_66
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_67
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_68
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_69
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_71
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_72
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_73
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_74
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_75
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_76
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_77
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_78
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_79
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_81
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_82
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_83
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_84
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_85
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_86
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_87
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_88
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_89
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_91
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_92
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_93
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_94
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_95
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_96
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_97
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_98
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_99
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_101
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_102
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_103
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_104
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_105
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_106
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_107
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_108
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_109
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_111
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_112
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_113
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_114
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_115
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_116
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_117
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_118
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: structure_119
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

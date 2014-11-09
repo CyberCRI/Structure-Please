@@ -1,0 +1,1763 @@
+fileFormatVersion: 2
+guid: fd7a3da5dc7f74518937c2fbd9e04748
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: transparency_0
+    21300002: transparency_1
+    21300004: transparency_2
+    21300006: transparency_3
+    21300008: transparency_4
+    21300010: transparency_5
+    21300012: transparency_6
+    21300014: transparency_7
+    21300016: transparency_8
+    21300018: transparency_9
+    21300020: transparency_10
+    21300022: transparency_11
+    21300024: transparency_12
+    21300026: transparency_13
+    21300028: transparency_14
+    21300030: transparency_15
+    21300032: transparency_16
+    21300034: transparency_17
+    21300036: transparency_18
+    21300038: transparency_19
+    21300040: transparency_20
+    21300042: transparency_21
+    21300044: transparency_22
+    21300046: transparency_23
+    21300048: transparency_24
+    21300050: transparency_25
+    21300052: transparency_26
+    21300054: transparency_27
+    21300056: transparency_28
+    21300058: transparency_29
+    21300060: transparency_30
+    21300062: transparency_31
+    21300064: transparency_32
+    21300066: transparency_33
+    21300068: transparency_34
+    21300070: transparency_35
+    21300072: transparency_36
+    21300074: transparency_37
+    21300076: transparency_38
+    21300078: transparency_39
+    21300080: transparency_40
+    21300082: transparency_41
+    21300084: transparency_42
+    21300086: transparency_43
+    21300088: transparency_44
+    21300090: transparency_45
+    21300092: transparency_46
+    21300094: transparency_47
+    21300096: transparency_48
+    21300098: transparency_49
+    21300100: transparency_50
+    21300102: transparency_51
+    21300104: transparency_52
+    21300106: transparency_53
+    21300108: transparency_54
+    21300110: transparency_55
+    21300112: transparency_56
+    21300114: transparency_57
+    21300116: transparency_58
+    21300118: transparency_59
+    21300120: transparency_60
+    21300122: transparency_61
+    21300124: transparency_62
+    21300126: transparency_63
+    21300128: transparency_64
+    21300130: transparency_65
+    21300132: transparency_66
+    21300134: transparency_67
+    21300136: transparency_68
+    21300138: transparency_69
+    21300140: transparency_70
+    21300142: transparency_71
+    21300144: transparency_72
+    21300146: transparency_73
+    21300148: transparency_74
+    21300150: transparency_75
+    21300152: transparency_76
+    21300154: transparency_77
+    21300156: transparency_78
+    21300158: transparency_79
+    21300160: transparency_80
+    21300162: transparency_81
+    21300164: transparency_82
+    21300166: transparency_83
+    21300168: transparency_84
+    21300170: transparency_85
+    21300172: transparency_86
+    21300174: transparency_87
+    21300176: transparency_88
+    21300178: transparency_89
+    21300180: transparency_90
+    21300182: transparency_91
+    21300184: transparency_92
+    21300186: transparency_93
+    21300188: transparency_94
+    21300190: transparency_95
+    21300192: transparency_96
+    21300194: transparency_97
+    21300196: transparency_98
+    21300198: transparency_99
+    21300200: transparency_100
+    21300202: transparency_101
+    21300204: transparency_102
+    21300206: transparency_103
+    21300208: transparency_104
+    21300210: transparency_105
+    21300212: transparency_106
+    21300214: transparency_107
+    21300216: transparency_108
+    21300218: transparency_109
+    21300220: transparency_110
+    21300222: transparency_111
+    21300224: transparency_112
+    21300226: transparency_113
+    21300228: transparency_114
+    21300230: transparency_115
+    21300232: transparency_116
+    21300234: transparency_117
+    21300236: transparency_118
+    21300238: transparency_119
+    21300240: transparency_120
+    21300242: transparency_121
+    21300244: transparency_122
+    21300246: transparency_123
+    21300248: transparency_124
+    21300250: transparency_125
+    21300252: transparency_126
+    21300254: transparency_127
+    21300256: transparency_128
+    21300258: transparency_129
+    21300260: transparency_130
+    21300262: transparency_131
+    21300264: transparency_132
+    21300266: transparency_133
+    21300268: transparency_134
+    21300270: transparency_135
+    21300272: transparency_136
+    21300274: transparency_137
+    21300276: transparency_138
+    21300278: transparency_139
+    21300280: transparency_140
+    21300282: transparency_141
+    21300284: transparency_142
+    21300286: transparency_143
+    21300288: transparency_144
+    21300290: transparency_145
+    21300292: transparency_146
+    21300294: transparency_147
+    21300296: transparency_148
+    21300298: transparency_149
+    21300300: transparency_150
+    21300302: transparency_151
+    21300304: transparency_152
+    21300306: transparency_153
+    21300308: transparency_154
+    21300310: transparency_155
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: transparency_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_2
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_3
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_4
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_5
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_6
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_7
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_8
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_9
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_10
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_11
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 7236
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_13
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_14
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_15
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_16
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_17
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_18
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_19
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_20
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_21
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_22
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_23
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 6633
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_25
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_26
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_27
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_28
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_29
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_30
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_31
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_32
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_33
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_34
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_35
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 6030
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_37
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_38
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_39
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_40
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_41
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_42
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_43
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_44
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_45
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_46
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_47
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 5427
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_49
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_50
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_51
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_52
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_53
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_54
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_55
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_56
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_57
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_58
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_59
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 4824
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_61
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_62
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_63
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_64
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_65
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_66
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_67
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_68
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_69
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_70
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_71
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 4221
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_73
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_74
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_75
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_76
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_77
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_78
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_79
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_80
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_81
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_82
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_83
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 3618
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_85
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_86
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_87
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_88
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_89
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_90
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_91
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_92
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_93
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_94
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_95
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 3015
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_97
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_98
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_99
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_100
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_101
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_102
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_103
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_104
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_105
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_106
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_107
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 2412
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_109
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_110
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_111
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_112
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_113
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_114
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_115
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_116
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_117
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_118
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_119
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 1809
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_121
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_122
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_123
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_124
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_125
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_126
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_127
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_128
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_129
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_130
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_131
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 1206
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_133
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_134
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_135
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_136
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_137
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_138
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_139
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_140
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_141
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_142
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_143
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 603
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_145
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_146
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_147
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_148
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_149
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_150
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_151
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_152
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_153
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_154
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: transparency_155
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 0
+        width: 575
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
