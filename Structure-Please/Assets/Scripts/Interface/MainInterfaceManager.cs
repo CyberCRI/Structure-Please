@@ -208,19 +208,21 @@ public class MainInterfaceManager : MonoBehaviour {
 	private static float targetWidth = 1920f;
 	private static float targetHeight = 1080f;
 
-	private static float _densityX = 120f;
-	private static float _densityY = targetHeight-(_buttonHeight+_spacing);
-	private static float _structureX = _densityX+_buttonWidth+_spacing;
-	private static float _structureY = targetHeight-(_buttonHeight+_spacing);
-	private static float _hardnessX = _densityX+2*(_buttonWidth+_spacing);
-	private static float _hardnessY = targetHeight-(_buttonHeight+_spacing);
+	// first column 
+	private static float _idcardX = 38f;
+	private static float _idcardY = 649f;
+	private static float _hardnessX = 38f;
+	private static float _hardnessY = 785f;
+	private static float _colorX = 38f;
+	private static float _colorY = 919f;
 
-	private static float _transparencyX = _densityX;
-	private static float _transparencyY = targetHeight-2*(_buttonHeight+_spacing);
-	private static float _colorX = _densityX+_buttonWidth+_spacing;
-	private static float _colorY = targetHeight-2*(_buttonHeight+_spacing);
-	private static float _idcardX = _densityX+2*(_buttonWidth+_spacing);
-	private static float _idcardY = targetHeight-2*(_buttonHeight+_spacing);
+	// second column
+	private static float _densityX = 332f;
+	private static float _densityY = 649f;
+	private static float _transparencyX = 332f;
+	private static float _transparencyY = 785f;
+	private static float _structureX = 332f;
+	private static float _structureY = 919f;
 	
 	private GUIStyle _buttonStyle;
     
