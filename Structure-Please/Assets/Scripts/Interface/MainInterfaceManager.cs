@@ -265,6 +265,9 @@ public class MainInterfaceManager : MonoBehaviour {
 		Rect idcardRect = getResizedRect(_idcardX, _idcardY,_buttonWidth,_buttonHeight);
 		//Debug.Log("idcardRect="+idcardRect);
 
+		Rect acceptRect = getResizedRect(1675f, 486f, 165f, 162f);
+		Rect rejectRect = getResizedRect(1675f, 683f, 165f, 166f);
+
 		if(GUI.Button (densityRect, new GUIContent (), _buttonStyle))
 		{
 			onPressAnalyzeDensity();
@@ -288,6 +291,14 @@ public class MainInterfaceManager : MonoBehaviour {
 		if(GUI.Button (idcardRect, new GUIContent (), _buttonStyle))
 		{
 			onPressIDCard();
+		}
+		if(GUI.Button (acceptRect, new GUIContent (), _buttonStyle))
+		{
+			acceptCharacter();
+		}
+		if(GUI.Button (rejectRect, new GUIContent (), _buttonStyle))
+		{
+			rejectCharacter();
 		}
 	}
 
