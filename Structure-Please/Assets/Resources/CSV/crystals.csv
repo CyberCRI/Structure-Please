@@ -3,6 +3,6 @@ Gold,gold.png,34,orStructure.png,TRUE,4,blue,TRUE
 Graphite,graphite,2.1,graphite,FALSE,1.5,noir,FALSE
 Diamant incolore,diamond,3.5,diamant,TRUE,10,incolore,TRUE
 Diamant noir,blackdiamond,3.5,diamant,TRUE,10,noir,TRUE
-Lonsdaléite,lonsdaleite,3.3,lonsdaleite,TRUE,3,rouge,FALSE
+Lonsdaléite,lonsdaleite,3.3,lonsdaléite,TRUE,3,rouge,FALSE
 Quartz,quartz,2.6,quartz,TRUE,7,incolore,FALSE
 Rubis,ruby,4,rubis,TRUE,9,rouge,TRUE

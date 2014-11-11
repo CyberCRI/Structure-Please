@@ -27,6 +27,6 @@ public class TransparencyCardPanel : MonoBehaviour {
 
 	public void display(Crystal testResults)
 	{
-		transparencyText.text = testResults.transparency.Value ? "Transparent" : "Opaque";
+		transparencyText.text = testResults.transparency.Value ? "Oui" : "Non";
 	}
 }
