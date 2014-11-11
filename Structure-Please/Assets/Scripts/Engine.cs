@@ -13,8 +13,6 @@ public class Engine : MonoBehaviour {
 	Dictionary<string, Crystal> crystals;
 	List<Character> characters;
 	Dictionary<string, int> testCosts;
-
-	int nextCharacterIndex = 0;
 	
 	Character currentCharacter;
 	Crystal currentTestResults;
@@ -50,8 +48,7 @@ public class Engine : MonoBehaviour {
 
 	public void gotoNextCharacter() 
 	{
-		nextCharacterIndex = nextCharacterIndex > characters.Count-1 ? 0 : nextCharacterIndex;
-		currentCharacter = characters [nextCharacterIndex++];
+		currentCharacter = characters [Random.Range(0, characters.Count-1)];
 		currentTestResults = new Crystal ();
 	}
 	
